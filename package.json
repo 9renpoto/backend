@@ -30,6 +30,11 @@
       "git add"
     ]
   },
+  "prettier": {
+    "semi": false,
+    "jsxSingleQuote": true,
+    "singleQuote": true
+  },
   "private": true,
   "scripts": {
     "build": "lerna run build --parallel",
@@ -39,7 +44,7 @@
     "lint:eslint": "npx eslint . --ext=ts,tsx",
     "lint:md": "textlint README.md packages/*.md packages/**/*.md",
     "lint:pkg": "lerna run lint --parallel",
-    "lint:prettier": "prettier --check './packages/**/*.{js,jsx,ts,tsx}'",
+    "lint:prettier": "prettier --check './{packages,apps}/**/*.{js,jsx,ts,tsx}'",
     "release": "lerna exec --no-bail -- 'can-npm-publish && npm publish --registry=\"https://registry.npmjs.org/\"'",
     "test": "lerna run test"
   },
