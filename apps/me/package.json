@@ -6,7 +6,6 @@
     "@nestjs/core": "^6.0.0",
     "@nestjs/platform-express": "^6.0.0",
     "reflect-metadata": "^0.1.12",
-    "rimraf": "^2.6.2",
     "rxjs": "^6.3.3"
   },
   "devDependencies": {
@@ -31,6 +30,7 @@
     ],
     "rootDir": "src",
     "testRegex": ".spec.ts$",
+    "collectCoverage": true,
     "transform": {
       "^.+\\.(t|j)s$": "ts-jest"
     },
@@ -39,14 +39,14 @@
   },
   "private": true,
   "scripts": {
-    "build": "rimraf dist && tsc -p tsconfig.build.json",
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rimraf dist",
     "lint": "tsc -p . --noEmit",
     "start": "ts-node -r tsconfig-paths/register src/main.ts",
     "start:debug": "tsc-watch -p tsconfig.build.json --onSuccess \"node --inspect-brk dist/main.js\"",
     "start:dev": "tsc-watch -p tsconfig.build.json --onSuccess \"node dist/main.js\"",
     "start:prod": "node dist/main.js",
     "test": "jest",
-    "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "test:watch": "jest --watch"
