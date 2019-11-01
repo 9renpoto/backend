@@ -11,8 +11,11 @@ update_configs:
       - "Type: Dependencies"
     automerged_updates:
       - match:
-          dependency_type: "all"
+          dependency_type: "development"
           update_type: "all"
+      - match:
+          dependency_type: "production"
+          update_type: "semver:minor"
   - package_manager: "javascript"
     directory: "/apps/me"
     update_schedule: "live"
@@ -22,7 +25,11 @@ update_configs:
       - "9renpoto"
     default_labels:
       - "Type: Dependencies"
+
     automerged_updates:
       - match:
-          dependency_type: "all"
+          dependency_type: "production"
+          update_type: "semver:patch"
+      - match:
+          dependency_type: "development"
           update_type: "all"
