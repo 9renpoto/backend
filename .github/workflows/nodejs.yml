@@ -23,5 +23,11 @@ jobs:
         yarn build
         yarn
         yarn lint
+        yarn test
       env:
         CI: true
+    - uses: codecov/codecov-action@v1.0.2
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        file: ./apps/me/coverage/*
+        name: apps/me
