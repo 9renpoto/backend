@@ -11,6 +11,7 @@
     "husky": "^3.0.9",
     "lerna-changelog": "^0.8.2",
     "lint-staged": "^9.4.2",
+    "nest-cli": "^0.0.5",
     "prettier-eslint-cli": "^5.0.0",
     "textlint": "^11.4.0"
   },
@@ -40,9 +41,10 @@
     "lint:pkg": "lerna run lint --parallel",
     "lint:prettier": "prettier --check './packages/**/*.{js,jsx,ts,tsx}'",
     "release": "lerna exec --no-bail -- 'can-npm-publish && npm publish --registry=\"https://registry.npmjs.org/\"'",
-    "test": "npm run lint"
+    "test": "lerna run test"
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "apps/*"
   ]
 }
