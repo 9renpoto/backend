@@ -1495,12 +1495,7 @@
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
   integrity sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
 
-"@types/node@*", "@types/node@^12.11.1":
-  version "12.12.3"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.3.tgz#ebfe83507ac506bc3486314a8aa395be66af8d23"
-  integrity sha512-opgSsy+cEF9N8MgaVPnWVtdJ3o4mV2aMHvDq7thkQUFt0EuOHJon4rQpJfhjmNHB+ikl0Cd6WhWIErOyQ+f7tw==
-
-"@types/node@12.12.7":
+"@types/node@*", "@types/node@12.12.7", "@types/node@^12.11.1":
   version "12.12.7"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.7.tgz#01e4ea724d9e3bd50d90c11fd5980ba317d8fa11"
   integrity sha512-E6Zn0rffhgd130zbCbAr/JdXfXkoOUFAKNs/rF8qnafSJ8KYaA/j3oz7dcwal+lYjLA7xvdd5J4wdYpCTlP8+w==
@@ -1529,9 +1524,9 @@
   integrity sha512-l42BggppR6zLmpfU6fq9HEa2oGPEI8yrSPL3GITjfRInppYFahObbIQOQK3UGxEnyQpltZLaPe75046NOZQikw==
 
 "@types/stripe@^7.10.7":
-  version "7.10.7"
-  resolved "https://registry.yarnpkg.com/@types/stripe/-/stripe-7.10.7.tgz#04da52da43a378459f38d226fc6540a95de686ce"
-  integrity sha512-U6LcWWD7Qu/TMGX44U3FNotqC3GcR1bE/E/+NSEwDGxGpGpXlsoJGzwhzNFJgytpG10NzyMcvGGTse36/JngvA==
+  version "7.12.2"
+  resolved "https://registry.yarnpkg.com/@types/stripe/-/stripe-7.12.2.tgz#532d9f3a46c16bb5a3463c40b143e6de1cf57d51"
+  integrity sha512-oxBn1aETDeX5zLaU7ZVi84VI8y1w9gNZG/1OsJo3beJi0i5PJvZ0PWogKEMuD3MFoNt4PhEaRwOKSzIwax4Hxg==
   dependencies:
     "@types/node" "*"
 
