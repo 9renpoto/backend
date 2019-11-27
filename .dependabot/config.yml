@@ -1,18 +1,14 @@
 version: 1
 update_configs:
-  - package_manager: "javascript"
-    directory: "/"
-    update_schedule: "weekly"
+  - package_manager: 'javascript'
+    directory: '/'
+    update_schedule: 'weekly'
     default_reviewers:
-      - "9renpoto"
+      - '9renpoto'
     default_assignees:
-      - "9renpoto"
+      - '9renpoto'
     default_labels:
-      - "Type: Dependencies"
-    automerged_updates:
+      - 'Type: Dependencies'
+    allowed_updates:
       - match:
-          dependency_type: "development"
-          update_type: "semver:minor"
-      - match:
-          dependency_type: "production"
-          update_type: "semver:patch"
+          update_type: 'security'

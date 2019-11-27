@@ -14,8 +14,11 @@ mergeable:
         # All todo check boxes must be checked.
       - do: description
         must_exclude:
-          regex: \[ \]
-          message: There are incomplete Todo task(s) unchecked.
+          regex: TBA
+          message: This is default templates yet.
+        no_empty:
+          enabled: true
+          message: must include specs
       - do: label
         must_include:
           regex: ^Type
