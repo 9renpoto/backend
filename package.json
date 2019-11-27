@@ -26,7 +26,7 @@
       "prettier-eslint --write",
       "git add"
     ],
-    "*.{js,jsx,md}": [
+    "*.{js,jsx,md,yml}": [
       "prettier --write",
       "git add"
     ]
