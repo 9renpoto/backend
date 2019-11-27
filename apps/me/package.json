@@ -5,10 +5,10 @@
     "@nestjs/common": "6.10.2",
     "@nestjs/core": "6.10.2",
     "@nestjs/platform-express": "6.10.2",
-    "@types/stripe": "7.13.9",
+    "@types/stripe": "7.13.11",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.5.3",
-    "stripe": "7.13.1"
+    "stripe": "7.14.0"
   },
   "devDependencies": {
     "@nestjs/testing": "6.10.2",
