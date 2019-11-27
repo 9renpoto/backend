@@ -2,5 +2,6 @@
   "extends": [
     "config:base"
   ],
-  "assignees": ["9renpoto"]
+  "assignees": ["9renpoto"],
+  "labels": ["Type: Dependencies"]
 }
