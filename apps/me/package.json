@@ -2,13 +2,13 @@
   "name": "@9renpoto/me",
   "version": "0.0.1",
   "dependencies": {
-    "@nestjs/common": "^6.0.0",
-    "@nestjs/core": "^6.0.0",
-    "@nestjs/platform-express": "^6.0.0",
-    "@types/stripe": "^7.10.7",
-    "reflect-metadata": "^0.1.12",
-    "rxjs": "^6.3.3",
-    "stripe": "^7.11.0"
+    "@nestjs/common": "6.10.1",
+    "@nestjs/core": "6.10.1",
+    "@nestjs/platform-express": "6.10.1",
+    "@types/stripe": "7.13.9",
+    "reflect-metadata": "0.1.13",
+    "rxjs": "6.5.3",
+    "stripe": "7.13.1"
   },
   "devDependencies": {
     "@nestjs/testing": "6.10.1",
