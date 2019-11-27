@@ -1,7 +1,15 @@
 {
   "extends": [
-    "config:base"
+    "config:js-lib"
   ],
-  "assignees": ["9renpoto"],
-  "labels": ["Type: Dependencies"]
+  "assignees": [
+    "9renpoto"
+  ],
+  "automerge": true,
+  "devDependencies": {
+    "automerge": true
+  },
+  "labels": [
+    "Type: Dependencies"
+  ]
 }
