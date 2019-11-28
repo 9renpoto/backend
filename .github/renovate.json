@@ -11,5 +11,6 @@
   },
   "labels": [
     "Type: Dependencies"
-  ]
+  ],
+  "semanticCommits": true
 }
