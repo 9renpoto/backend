@@ -1182,7 +1182,7 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@nestjs/cli@^6.12.9":
+"@nestjs/cli@6.12.9":
   version "6.12.9"
   resolved "https://registry.yarnpkg.com/@nestjs/cli/-/cli-6.12.9.tgz#fcceebd12930e5640ccbcced50886d28444a72d8"
   integrity sha512-moVjsbyXfRtVqhgMXKC7sd3K+yU/qZd8Vfaey+99aELOWxTOsFmdEWq6LJOUEQtuRhzFwICamWkKSvXLFBvOWw==
@@ -12551,7 +12551,7 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeorm-factory@^0.0.13:
+typeorm-factory@0.0.13:
   version "0.0.13"
   resolved "https://registry.yarnpkg.com/typeorm-factory/-/typeorm-factory-0.0.13.tgz#c1ca2dd928c0d24df5f3e8155be163c6e08ea20b"
   integrity sha512-2rUsSPHnA1xG9oNdk1sW7pvb0cl3j8AQCIkDOgOKFblJb3aK4dp8zK0GkA6/uEUDzXpN0mCOk3sgnCFCMkD2WQ==
