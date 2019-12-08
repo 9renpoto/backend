@@ -2,41 +2,28 @@
   "name": "@9renpoto/me",
   "version": "0.0.1",
   "dependencies": {
-    "@nestjs/common": "6.10.5",
-    "@nestjs/core": "6.10.5",
-    "@nestjs/platform-express": "6.10.5",
-    "@types/stripe": "7.13.11",
-    "reflect-metadata": "0.1.13",
-    "rxjs": "6.5.3",
-    "stripe": "7.14.0"
+    "@nestjs/common": "^6.10.2",
+    "@nestjs/core": "^6.10.2",
+    "@nestjs/platform-fastify": "^6.10.7",
+    "@types/stripe": "^7.13.11",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.5.3",
+    "stripe": "^7.14.0"
   },
   "devDependencies": {
-    "@nestjs/testing": "6.10.5",
-    "@types/express": "4.17.2",
-    "@types/jest": "24.0.23",
-    "@types/node": "12.12.14",
-    "@types/supertest": "2.0.8",
-    "jest": "24.9.0",
-    "supertest": "4.0.2",
-    "ts-jest": "24.2.0",
-    "ts-node": "8.5.4",
-    "tsc-watch": "4.0.0",
-    "tsconfig-paths": "3.9.0",
-    "typescript": "3.7.2"
+    "@nestjs/testing": "6.10.2"
   },
   "jest": {
-    "moduleFileExtensions": [
-      "js",
-      "json",
-      "ts"
-    ],
-    "rootDir": "src",
-    "testRegex": ".spec.ts$",
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    },
+    "collectCoverageFrom": ["src/**/*.ts"],
     "collectCoverage": true,
     "transform": {
       "^.+\\.(t|j)s$": "ts-jest"
     },
-    "coverageDirectory": "../coverage",
     "testEnvironment": "node"
   },
   "private": true,
@@ -49,8 +36,6 @@
     "start:dev": "tsc-watch -p tsconfig.build.json --onSuccess \"node dist/main.js\"",
     "start:prod": "node dist/main.js",
     "test": "jest",
-    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json",
-    "test:watch": "jest --watch"
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand"
   }
 }
