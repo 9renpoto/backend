@@ -9,7 +9,7 @@ export async function randomPort(): Promise<number> {
       resolve(port)
     }
     server.listen(0, () => {
-      port = (server.address() as net.AddressInfo).port
+      ;({ port } = server.address() as net.AddressInfo)
       server.close()
       resolve(port)
     })
