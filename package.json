@@ -1,5 +1,5 @@
 {
-  "name": "@pj/template",
+  "name": "@9renpoto/backend",
   "author": "github.com/9renpoto",
   "dependencies": {
     "lerna": "^3.19.0",
