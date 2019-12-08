@@ -4,7 +4,7 @@
   "dependencies": {
     "@nestjs/common": "^6.10.2",
     "@nestjs/core": "^6.10.2",
-    "@nestjs/platform-fastify": "^6.10.7",
+    "@nestjs/platform-fastify": "^6.10.2",
     "@types/stripe": "^7.13.11",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^6.5.3",
@@ -19,7 +19,9 @@
         "tsConfig": "tsconfig.json"
       }
     },
-    "collectCoverageFrom": ["src/**/*.ts"],
+    "collectCoverageFrom": [
+      "src/**/*.ts"
+    ],
     "collectCoverage": true,
     "transform": {
       "^.+\\.(t|j)s$": "ts-jest"
