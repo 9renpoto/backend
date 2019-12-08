@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@9renpoto/eslint-config-typescript@^5.4.0":
+"@9renpoto/eslint-config-typescript@5.4.0":
   version "5.4.0"
   resolved "https://registry.yarnpkg.com/@9renpoto/eslint-config-typescript/-/eslint-config-typescript-5.4.0.tgz#67ad7dfae5c7db498cc0501287d850f5c3103669"
   integrity sha512-78uU4Je30kTx8ekTNa82kzaizzaomXKp7/LXY+lrv2Gdhlzii+wQMyCUP2RSJRKOs+91H1WVyHtpFAqVCAWXzQ==
@@ -19,7 +19,7 @@
     eslint-plugin-import "2.18.2"
     eslint-plugin-prettier "3.1.1"
 
-"@9renpoto/textlint-config-ja@^5.4.0":
+"@9renpoto/textlint-config-ja@5.4.0":
   version "5.4.0"
   resolved "https://registry.yarnpkg.com/@9renpoto/textlint-config-ja/-/textlint-config-ja-5.4.0.tgz#1ab07280ee8632ca6569fb3df1c353e69f7188c8"
   integrity sha512-F/nAQcqoeAbNrMjBsHNyWntI6UkLgQMYNKpVFYqMSVlwe8+Xev8pNNdEj1/S5x+EO93n+8fzy7SHSZVaJOUwRw==
