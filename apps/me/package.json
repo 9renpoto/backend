@@ -11,7 +11,7 @@
     "stripe": "^7.14.0"
   },
   "devDependencies": {
-    "@nestjs/testing": "6.10.2"
+    "@nestjs/testing": "6.10.7"
   },
   "jest": {
     "globals": {
