@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@nestjs/cli": "6.12.9",
-    "@nestjs/testing": "6.10.7",
+    "@nestjs/testing": "6.10.8",
     "typeorm-factory": "0.0.13"
   },
   "jest": {
