@@ -31,12 +31,10 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "prettier-eslint --write",
-      "git add"
+      "prettier-eslint --write"
     ],
     "*.{js,jsx,md,yml}": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   },
   "prettier": {
