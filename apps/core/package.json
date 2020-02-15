@@ -1,6 +1,18 @@
 {
   "name": "@9renpoto/core",
   "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rimraf dist",
+    "lint": "tsc -p . --noEmit",
+    "start": "ts-node -r tsconfig-paths/register src/main.ts",
+    "start:debug": "tsc-watch -p tsconfig.build.json --onSuccess \"node --inspect-brk dist/main.js\"",
+    "start:dev": "tsc-watch -p tsconfig.build.json --onSuccess \"node dist/main.js\"",
+    "start:prod": "node dist/main.js",
+    "test": "jest",
+    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand"
+  },
   "dependencies": {
     "@godaddy/terminus": "^4.3.1",
     "@nestjs/common": "^6.11.5",
@@ -10,22 +22,24 @@
     "@nestjs/swagger": "^4.2.3",
     "@nestjs/terminus": "^6.5.5",
     "@nestjs/typeorm": "^6.2.0",
+    "@types/mongoose": "^5.7.1",
     "apollo-server-fastify": "^2.9.16",
     "class-transformer": "^0.2.3",
     "class-validator": "^0.11.0",
     "graphql": "^14.6.0",
+    "graphql-tag-pluck": "^0.8.7",
     "nest-raven": "^5.0.0",
     "nestjs-config": "^1.4.5",
-    "nestjs-stripe": "^0.3.0",
+    "nestjs-stripe": "0.3.0",
     "pg": "^7.18.1",
-    "reflect-metadata": "^0.1.13",
+    "reflect-metadata": "0.1.13",
     "rxjs": "^6.5.4",
     "stripe": "^8.12.0",
-    "type-graphql": "^0.17.6",
-    "typeorm": "^0.2.22",
+    "type-graphql": "0.17.6",
+    "typeorm": "0.2.22",
     "typeorm-naming-strategies": "^1.1.0",
     "typeorm-test-transactions": "^1.9.0",
-    "typeorm-transactional-cls-hooked": "^0.1.11"
+    "typeorm-transactional-cls-hooked": "0.1.11"
   },
   "devDependencies": {
     "@nestjs/cli": "6.14.2",
@@ -46,17 +60,5 @@
       "^.+\\.(t|j)s$": "ts-jest"
     },
     "testEnvironment": "node"
-  },
-  "private": true,
-  "scripts": {
-    "build": "tsc -p tsconfig.build.json",
-    "clean": "rimraf dist",
-    "lint": "tsc -p . --noEmit",
-    "start": "ts-node -r tsconfig-paths/register src/main.ts",
-    "start:debug": "tsc-watch -p tsconfig.build.json --onSuccess \"node --inspect-brk dist/main.js\"",
-    "start:dev": "tsc-watch -p tsconfig.build.json --onSuccess \"node dist/main.js\"",
-    "start:prod": "node dist/main.js",
-    "test": "jest",
-    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand"
   }
 }
