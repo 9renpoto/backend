@@ -1,15 +1,15 @@
 {
   "name": "@9renpoto/variables",
   "version": "0.0.0",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc -p .",
+    "clean": "rimraf lib",
+    "lint": "tsc -p . --noEmit"
+  },
   "files": [
     "lib"
   ],
-  "main": "lib/index.js",
-  "private": true,
-  "scripts": {
-    "build": "tsc -p .",
-    "lint": "tsc -p . --noEmit",
-    "clean": "rimraf lib"
-  },
   "typings": "lib/index.d.ts"
 }
