@@ -39,7 +39,7 @@
     "typeorm": "0.2.22",
     "typeorm-naming-strategies": "^1.1.0",
     "typeorm-test-transactions": "^1.9.0",
-    "typeorm-transactional-cls-hooked": "0.1.11"
+    "typeorm-transactional-cls-hooked": "0.1.12"
   },
   "devDependencies": {
     "@nestjs/cli": "6.14.2",
