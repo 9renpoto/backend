@@ -1,5 +1,7 @@
 lib/
 dist/
+apps/core/src/schema.gql
+apps/core/swagger-spec.json
 
 # Logs
 logs

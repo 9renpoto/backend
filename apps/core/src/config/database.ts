@@ -3,7 +3,7 @@ import { ConnectionOptions } from 'typeorm'
 import { SnakeNamingStrategy } from 'typeorm-naming-strategies'
 import { registerAs } from '@nestjs/config'
 
-const config: ConnectionOptions = {
+export const config: ConnectionOptions = {
   type: 'postgres',
   host: process.env.DATABASE_HOST,
   username: process.env.POSTGRES_USER,
@@ -14,6 +14,7 @@ const config: ConnectionOptions = {
     socketPath: process.env.DATABASE_HOST
   },
   logging: 'all',
+  synchronize: true,
   namingStrategy: new SnakeNamingStrategy()
 }
 

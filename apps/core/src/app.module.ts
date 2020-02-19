@@ -1,9 +1,10 @@
-import { Module, ValidationPipe } from '@nestjs/common'
-import { StripeModule } from 'nestjs-stripe'
+import { APP_PIPE, APP_INTERCEPTOR } from '@nestjs/core/constants'
 import { ConfigModule, ConfigService } from '@nestjs/config'
 import { GraphQLModule } from '@nestjs/graphql'
+import { Module, ValidationPipe } from '@nestjs/common'
 import { RavenModule, RavenInterceptor } from 'nest-raven'
-import { APP_PIPE, APP_INTERCEPTOR } from '@nestjs/core/constants'
+import { StripeModule } from 'nestjs-stripe'
+import { TypeOrmModule } from '@nestjs/typeorm'
 import { AppController } from './app.controller'
 import { AppService } from './app.service'
 import { HealthModule } from './health/health.module'
@@ -27,6 +28,15 @@ import stripeConfig from './config/stripe'
       imports: [ConfigModule],
       inject: [ConfigService],
       useFactory: (config: ConfigService) => config.get('stripe')
+    }),
+    TypeOrmModule.forRootAsync({
+      imports: [ConfigModule],
+      inject: [ConfigService],
+      useFactory: (config: ConfigService) => {
+        const c = config.get('database')
+        console.warn(c)
+        return c
+      }
     }),
     HealthModule,
     RavenModule,
