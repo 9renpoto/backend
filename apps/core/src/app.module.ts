@@ -8,7 +8,7 @@ import { TypeOrmModule } from '@nestjs/typeorm'
 import { AppController } from './app.controller'
 import { AppService } from './app.service'
 import { HealthModule } from './health/health.module'
-import { UserModule } from './user/user.module';
+import { UserModule } from './user/user.module'
 import databaseConfig from './config/database'
 import stripeConfig from './config/stripe'
 
@@ -32,11 +32,7 @@ import stripeConfig from './config/stripe'
     TypeOrmModule.forRootAsync({
       imports: [ConfigModule],
       inject: [ConfigService],
-      useFactory: (config: ConfigService) => {
-        const c = config.get('database')
-        console.warn(c)
-        return c
-      }
+      useFactory: (config: ConfigService) => config.get('database')
     }),
     HealthModule,
     RavenModule,

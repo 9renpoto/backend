@@ -1,6 +1,12 @@
-import { ObjectType, ID, Field } from "type-graphql";
+import { ObjectType, ID, Field } from 'type-graphql'
 import { BaseRepository } from 'typeorm-transactional-cls-hooked'
-import { EntityRepository, PrimaryGeneratedColumn, Entity, Column } from "typeorm";
+import {
+  EntityRepository,
+  PrimaryGeneratedColumn,
+  Entity,
+  Column,
+  Index
+} from 'typeorm'
 
 @Entity('users')
 @ObjectType()
@@ -11,6 +17,7 @@ export class User {
 
   @Field()
   @Column()
+  @Index({ unique: true })
   readonly name: string
 }
 

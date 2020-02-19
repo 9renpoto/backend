@@ -1,18 +1,14 @@
-import { Test, TestingModule } from '@nestjs/testing';
-import { UserService } from './user.service';
+import { getCustomRepository } from 'typeorm'
+import { UserService } from './user.service'
+import { UserRepository } from './user.entity'
+import '../testing'
 
 describe('UserService', () => {
-  let service: UserService;
+  let service: UserService
 
   beforeEach(async () => {
-    const module: TestingModule = await Test.createTestingModule({
-      providers: [UserService],
-    }).compile();
+    service = new UserService(getCustomRepository(UserRepository))
+  })
 
-    service = module.get<UserService>(UserService);
-  });
-
-  it('should be defined', () =>
-    expect(service).toBeDefined()
-  );
-});
+  it('should be defined', () => expect(service).toBeDefined())
+})
