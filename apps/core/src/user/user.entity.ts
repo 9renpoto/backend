@@ -4,8 +4,7 @@ import {
   EntityRepository,
   PrimaryGeneratedColumn,
   Entity,
-  Column,
-  Index
+  Column
 } from 'typeorm'
 
 @Entity('users')
@@ -17,7 +16,6 @@ export class User {
 
   @Field()
   @Column()
-  @Index({ unique: true })
   readonly name: string
 }
 

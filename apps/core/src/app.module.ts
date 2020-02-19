@@ -1,8 +1,8 @@
-import { APP_PIPE, APP_INTERCEPTOR } from '@nestjs/core/constants'
+import { APP_PIPE } from '@nestjs/core/constants'
 import { ConfigModule, ConfigService } from '@nestjs/config'
 import { GraphQLModule } from '@nestjs/graphql'
 import { Module, ValidationPipe } from '@nestjs/common'
-import { RavenModule, RavenInterceptor } from 'nest-raven'
+import { RavenModule } from 'nest-raven'
 import { StripeModule } from 'nestjs-stripe'
 import { TypeOrmModule } from '@nestjs/typeorm'
 import { AppController } from './app.controller'
@@ -41,10 +41,6 @@ import stripeConfig from './config/stripe'
   controllers: [AppController],
   providers: [
     AppService,
-    {
-      provide: APP_INTERCEPTOR,
-      useValue: new RavenInterceptor()
-    },
     {
       provide: APP_PIPE,
       useClass: ValidationPipe
