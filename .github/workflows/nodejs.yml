@@ -35,7 +35,6 @@ jobs:
           yarn
           yarn lint
           yarn test
-        working-directory: ./postgres
         env:
           CI: true
           POSTGRES_HOST: postgres
