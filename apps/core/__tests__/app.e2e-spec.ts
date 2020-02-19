@@ -4,10 +4,10 @@ import {
   FastifyAdapter,
   NestFastifyApplication
 } from '@nestjs/platform-fastify'
-import { randomPort } from '../test.util'
+import { randomPort } from '../src/testing'
 import { AppModule } from './../src/app.module'
 
-describe.skip('AppController (e2e)', () => {
+describe('AppController (e2e)', () => {
   let app: NestFastifyApplication
 
   beforeEach(async () => {

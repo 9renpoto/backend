@@ -1,6 +1,7 @@
 import { join } from 'path'
 import { ConnectionOptions } from 'typeorm'
 import { SnakeNamingStrategy } from 'typeorm-naming-strategies'
+import { registerAs } from '@nestjs/config'
 
 const config: ConnectionOptions = {
   type: 'postgres',
@@ -16,4 +17,4 @@ const config: ConnectionOptions = {
   namingStrategy: new SnakeNamingStrategy()
 }
 
-export default config
+export default registerAs('database', () => config)
