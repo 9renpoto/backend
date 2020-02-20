@@ -49,7 +49,7 @@ describe('app (e2e)', () => {
             input: { id: user.id }
           }
         })
-      ).data.user
+      ).data
     ).toBeDefined()
   })
 })

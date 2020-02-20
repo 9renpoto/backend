@@ -3,7 +3,6 @@ import { Resolver, Query, Args } from '@nestjs/graphql'
 import { InputType, Field } from 'type-graphql'
 import { UserDataLoader, UserLoader } from './user.loader'
 import { User } from './user.entity'
-import { UserService } from './user.service'
 
 @InputType()
 class UserInput implements Partial<User> {
