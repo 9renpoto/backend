@@ -1,31 +1,55 @@
 import { Test, TestingModule } from '@nestjs/testing'
-import * as request from 'supertest'
 import {
   FastifyAdapter,
   NestFastifyApplication
 } from '@nestjs/platform-fastify'
-import { randomPort } from '../test.util'
-import { AppModule } from './../src/app.module'
+import { createTestClient } from 'apollo-server-testing'
+import { GraphQLModule } from '@nestjs/graphql'
+import gql from 'graphql-tag'
+import { AppModule } from '../src/app.module'
+import { UserFactory } from '../src/user/user.factory'
 
-describe.skip('AppController (e2e)', () => {
+describe('app (e2e)', () => {
   let app: NestFastifyApplication
+  let apolloClient: ReturnType<typeof createTestClient>
 
   beforeEach(async () => {
     const moduleFixture: TestingModule = await Test.createTestingModule({
       imports: [AppModule]
     }).compile()
-    const port = await randomPort()
     app = moduleFixture.createNestApplication<NestFastifyApplication>(
       new FastifyAdapter()
     )
-    await app.listen(port)
+    await app.init()
+
+    // apolloServer is protected, we need to cast module to any to get it
+    const { apolloServer } = moduleFixture.get(GraphQLModule)
+    apolloClient = createTestClient(apolloServer)
   })
 
   afterEach(() => app.close())
 
-  it('/ (GET)', () =>
-    request(app.getHttpServer())
-      .get('/')
-      .expect(200)
-      .expect('Hello World!'))
+  it('defined', () => expect(app).toBeDefined())
+
+  it('try dataLoader', async () => {
+    const user = await UserFactory.create()
+    const { query } = apolloClient
+    expect(
+      await (
+        await query({
+          query: gql`
+            query getUser($input: UserInput!) {
+              user(id: $input) {
+                id
+                name
+              }
+            }
+          `,
+          variables: {
+            input: { id: user.id }
+          }
+        })
+      ).data
+    ).toBeDefined()
+  })
 })

@@ -5,7 +5,6 @@ import {
   patchTypeORMRepositoryWithBaseRepository
 } from 'typeorm-transactional-cls-hooked'
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger'
-import { ValidationPipe } from '@nestjs/common'
 import {
   FastifyAdapter,
   NestFastifyApplication
@@ -33,8 +32,6 @@ async function bootstrap() {
 
   fs.writeFileSync('./swagger-spec.json', JSON.stringify(document))
   SwaggerModule.setup('api', app, document)
-
-  app.useGlobalPipes(new ValidationPipe({}))
 
   await app.listen(3000)
 }

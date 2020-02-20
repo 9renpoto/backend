@@ -1,3 +1,3 @@
-# @9renpoto/me
+# @9renpoto/core
 
 > TBA
