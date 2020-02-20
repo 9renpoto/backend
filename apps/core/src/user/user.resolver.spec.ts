@@ -29,6 +29,6 @@ describe('UserResolver', () => {
   it('user', async () => {
     const users = await UserFactory.createList(1)
     user.useValue.find.mockReturnValueOnce(users)
-    expect(await resolver.user(users[0].id, loader)).toEqual(users[0])
+    expect(await resolver.user({ id: users[0].id }, loader)).toEqual(users[0])
   })
 })

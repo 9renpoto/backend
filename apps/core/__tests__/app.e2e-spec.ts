@@ -9,7 +9,7 @@ import gql from 'graphql-tag'
 import { AppModule } from '../src/app.module'
 import { UserFactory } from '../src/user/user.factory'
 
-describe('AppController (e2e)', () => {
+describe('app (e2e)', () => {
   let app: NestFastifyApplication
   let apolloClient: ReturnType<typeof createTestClient>
 
@@ -35,21 +35,21 @@ describe('AppController (e2e)', () => {
     const user = await UserFactory.create()
     const { query } = apolloClient
     expect(
-      (
+      await (
         await query({
           query: gql`
-            query getUser($id: String!) {
-              user(id: $id) {
+            query getUser($input: UserInput!) {
+              user(id: $input) {
                 id
                 name
               }
             }
           `,
           variables: {
-            id: user.id
+            input: { id: user.id }
           }
         })
-      ).errors
-    ).toHaveLength(0)
+      ).data.user
+    ).toBeDefined()
   })
 })
