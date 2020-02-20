@@ -1,11 +1,10 @@
 import { ConfigModule, ConfigService } from '@nestjs/config'
 import { GraphQLModule } from '@nestjs/graphql'
-import { APP_INTERCEPTOR, APP_PIPE } from '@nestjs/core'
 import { Module, ValidationPipe } from '@nestjs/common'
-import { DataLoaderInterceptor } from 'nestjs-dataloader'
 import { RavenModule } from 'nest-raven'
 import { StripeModule } from 'nestjs-stripe'
 import { TypeOrmModule } from '@nestjs/typeorm'
+import { APP_PIPE } from '@nestjs/core'
 import { AppController } from './app.controller'
 import { AppService } from './app.service'
 import { HealthModule } from './health/health.module'
@@ -45,10 +44,6 @@ import stripeConfig from './config/stripe'
     {
       provide: APP_PIPE,
       useClass: ValidationPipe
-    },
-    {
-      provide: APP_INTERCEPTOR,
-      useClass: DataLoaderInterceptor
     }
   ]
 })
