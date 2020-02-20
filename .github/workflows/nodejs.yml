@@ -34,7 +34,7 @@ jobs:
           yarn build
           yarn
           yarn lint
-          yarn workspace @9renpoto/core test -w 1
+          yarn test
         env:
           CI: true
           POSTGRES_HOST: postgres
