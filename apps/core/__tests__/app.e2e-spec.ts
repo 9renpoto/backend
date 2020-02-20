@@ -41,6 +41,7 @@ describe('AppController (e2e)', () => {
             query getUser($id: String!) {
               user(id: $id) {
                 id
+                name
               }
             }
           `,

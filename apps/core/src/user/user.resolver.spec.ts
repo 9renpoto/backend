@@ -27,7 +27,8 @@ describe('UserResolver', () => {
   it('should be defined', () => expect(resolver).toBeDefined())
 
   it('user', async () => {
-    const user = await UserFactory.create()
-    expect(await resolver.user(user.id, loader)).toMatchInlineSnapshot()
+    const users = await UserFactory.createList(1)
+    user.useValue.find.mockReturnValueOnce(users)
+    expect(await resolver.user(users[0].id, loader)).toEqual(users[0])
   })
 })

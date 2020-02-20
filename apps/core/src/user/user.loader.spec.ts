@@ -21,12 +21,13 @@ describe('UserDataLoader', () => {
     const dataLoader = await module.resolve<UserDataLoader>(UserDataLoader)
     loader = dataLoader.generateDataLoader()
     service = module.get(UserService)
+    loader.clearAll()
   })
 
   it('load', async () => {
-    const users = await UserFactory.createList(3)
+    const users = await UserFactory.createList(1)
     user.useValue.find.mockReturnValueOnce(users)
 
-    expect(await loader.load(users[1].id)).toMatchInlineSnapshot()
+    expect(await loader.load(users[0].id)).toEqual(users[0])
   })
 })
