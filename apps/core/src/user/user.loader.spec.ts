@@ -1,33 +1,32 @@
-import { Test, TestingModule } from '@nestjs/testing'
+import { TestingModule, Test } from '@nestjs/testing'
 import { createMockRepository } from '../testing/entity'
-import { UserResolver } from './user.resolver'
-import { UserFactory } from './user.factory'
 import { UserDataLoader, UserLoader } from './user.loader'
+import { UserResolver } from './user.resolver'
 import { UserService } from './user.service'
 import { User } from './user.entity'
+import { UserFactory } from './user.factory'
 import '../testing'
 
-describe('UserResolver', () => {
+describe('UserDataLoader', () => {
   let loader: UserLoader
-  let resolver: UserResolver
+  let service: UserService
   let user: ReturnType<typeof createMockRepository>
 
   beforeEach(async () => {
     user = createMockRepository(User)
-
     const module: TestingModule = await Test.createTestingModule({
       providers: [UserResolver, UserDataLoader, UserService, user]
     }).compile()
 
-    resolver = module.get<UserResolver>(UserResolver)
     const dataLoader = await module.resolve<UserDataLoader>(UserDataLoader)
     loader = dataLoader.generateDataLoader()
+    service = module.get(UserService)
   })
 
-  it('should be defined', () => expect(resolver).toBeDefined())
+  it('load', async () => {
+    const users = await UserFactory.createList(3)
+    user.useValue.find.mockReturnValueOnce(users)
 
-  it('user', async () => {
-    const user = await UserFactory.create()
-    expect(await resolver.user(user.id, loader)).toMatchInlineSnapshot()
+    expect(await loader.load(users[1].id)).toMatchInlineSnapshot()
   })
 })

@@ -6,9 +6,9 @@ import { UserRepository } from './user.entity'
 export class UserService {
   constructor(private readonly repo: UserRepository) {}
 
-  async find(ids: string[]) {
+  async find(ids: readonly string[]) {
     return this.repo.find({
-      where: { id: In(ids) }
+      where: { id: In(ids as string[]) }
     })
   }
 }
