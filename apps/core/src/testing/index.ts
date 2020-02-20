@@ -8,11 +8,11 @@ initialiseTestTransactions()
 const entities = [User]
 
 function createBDConnection() {
+  // eslint-disable-next-line no-console
+  console.warn(config)
   return createConnection({
     ...{
       ...config,
-      username: 'postgres',
-      password: 'password',
       logging: false
     },
     entities
