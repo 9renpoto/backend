@@ -3528,10 +3528,10 @@ atob@^2.1.1:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-auto-relay@0.12.0:
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/auto-relay/-/auto-relay-0.12.0.tgz#db043b8c1c05ef214e4dae9444bc7e3b5dffdff3"
-  integrity sha512-e16bTs1jGgmLABr1Mo5HDBzbXw0zy0cS1fMvDgFt/lZ9GftQABb3U+9UtQadX20PWZ7ONUQLKEWZREzMKCI0+w==
+auto-relay@0.12.2:
+  version "0.12.2"
+  resolved "https://registry.yarnpkg.com/auto-relay/-/auto-relay-0.12.2.tgz#486f283f25024c17e992fca39fde697867b716ac"
+  integrity sha512-+PI0BikhD+mEPppntzAmuXlffce5Uf9wnpl7aoW9xFwQ3CGdjQwC/et+2QlRY9wP8D820ou46ROjrB37sakxhw==
   dependencies:
     lodash.clonedeep "^4.5.0"
     typedi "^0.8.0"
