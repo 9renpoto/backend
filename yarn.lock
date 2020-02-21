@@ -112,10 +112,10 @@
   resolved "https://registry.yarnpkg.com/@apollographql/graphql-playground-html/-/graphql-playground-html-1.6.24.tgz#3ce939cb127fb8aaa3ffc1e90dff9b8af9f2e3dc"
   integrity sha512-8GqG48m1XqyXh4mIZrtB5xOhUwSsh1WsrrsaZQOEYYql3YN9DEu9OOSg0ILzXHZo/h2Q74777YE4YzlArQzQEQ==
 
-"@auto-relay/typeorm@0.12.0":
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/@auto-relay/typeorm/-/typeorm-0.12.0.tgz#b1c6b2dac71964040408fa44b76f3b2a76720b3b"
-  integrity sha512-Bf1ZjonXczWwfOv7YzmGVD48aK/0RrVJ6d7DPVcEZ/bc7EihIxA6Falu24IeWeSbOegDNIdIWqkp5VZEwjPNyw==
+"@auto-relay/typeorm@0.12.5":
+  version "0.12.5"
+  resolved "https://registry.yarnpkg.com/@auto-relay/typeorm/-/typeorm-0.12.5.tgz#e0a23e0573bc61448a2ebde73657f4ce8d4d6a01"
+  integrity sha512-Jk8U1nFTMYHoAJPgdKvKIA0y4Fnk9eUBXAOltb1odGsSJOdiMrF6v7Rdh9/9MI6kxea3kLcY/a6NSjbVqZtjjA==
 
 "@azu/format-text@^1.0.1":
   version "1.0.1"
