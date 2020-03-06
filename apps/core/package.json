@@ -14,7 +14,7 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand"
   },
   "dependencies": {
-    "@auto-relay/typeorm": "0.12.5",
+    "@auto-relay/typeorm": "0.12.6",
     "@godaddy/terminus": "^4.3.1",
     "@nestjs/common": "^6.11.5",
     "@nestjs/config": "0.2.4",
