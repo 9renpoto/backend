@@ -52,7 +52,7 @@
     "@nestjs/schematics": "6.9.4",
     "@nestjs/testing": "6.11.11",
     "apollo-server-testing": "2.10.1",
-    "typeorm-factory": "0.0.13"
+    "typeorm-factory": "0.0.14"
   },
   "jest": {
     "globals": {

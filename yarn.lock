@@ -13549,10 +13549,10 @@ typedi@0.8.0, typedi@^0.8.0:
   resolved "https://registry.yarnpkg.com/typedi/-/typedi-0.8.0.tgz#d8e203bd1d41a96e2b0a5c6295147d74b2b2d03e"
   integrity sha512-/c7Bxnm6eh5kXx2I+mTuO+2OvoWni5+rXA3PhXwVWCtJRYmz3hMok5s1AKLzoDvNAZqj/Q/acGstN0ri5aQoOA==
 
-typeorm-factory@0.0.13:
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/typeorm-factory/-/typeorm-factory-0.0.13.tgz#c1ca2dd928c0d24df5f3e8155be163c6e08ea20b"
-  integrity sha512-2rUsSPHnA1xG9oNdk1sW7pvb0cl3j8AQCIkDOgOKFblJb3aK4dp8zK0GkA6/uEUDzXpN0mCOk3sgnCFCMkD2WQ==
+typeorm-factory@0.0.14:
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/typeorm-factory/-/typeorm-factory-0.0.14.tgz#bbc56a61684238ac9e3a1c88cbab508efe422ba1"
+  integrity sha512-PdCEnprw2YDbFJ50mCtPr+IOQa5Y9Yv7l3DDmqNEJPROwK48znvQEHVRA9bWR2ByjaZDfmRMWo7+/Q+WkDPOgw==
 
 typeorm-naming-strategies@^1.1.0:
   version "1.1.0"
