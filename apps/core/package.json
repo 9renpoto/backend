@@ -17,7 +17,7 @@
     "@auto-relay/typeorm": "0.12.6",
     "@godaddy/terminus": "^4.3.1",
     "@nestjs/common": "^7.0.0",
-    "@nestjs/config": "0.3.0",
+    "@nestjs/config": "0.4.0",
     "@nestjs/core": "^7.0.0",
     "@nestjs/graphql": "^6.5.4",
     "@nestjs/platform-fastify": "^7.0.0",
