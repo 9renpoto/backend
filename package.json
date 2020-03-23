@@ -32,7 +32,7 @@
     "lint-staged": "10.0.9",
     "prettier": "2.0.2",
     "prettier-eslint-cli": "5.0.0",
-    "prettier-plugin-package": "0.3.1",
+    "prettier-plugin-package": "1.0.0",
     "supertest": "4.0.2",
     "textlint": "11.6.3",
     "ts-jest": "25.2.1",
