@@ -2,12 +2,12 @@ import * as fs from 'fs'
 import { NestFactory } from '@nestjs/core'
 import {
   initializeTransactionalContext,
-  patchTypeORMRepositoryWithBaseRepository
+  patchTypeORMRepositoryWithBaseRepository,
 } from 'typeorm-transactional-cls-hooked'
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger'
 import {
   FastifyAdapter,
-  NestFastifyApplication
+  NestFastifyApplication,
 } from '@nestjs/platform-fastify'
 import { AppModule } from './app.module'
 

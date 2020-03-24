@@ -12,9 +12,9 @@ describe('HealthService', () => {
         TypeOrmHealthIndicator,
         {
           provide: '',
-          useValue: {}
-        }
-      ]
+          useValue: {},
+        },
+      ],
     }).compile()
 
     service = module.get<HealthService>(HealthService)

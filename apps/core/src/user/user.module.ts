@@ -15,8 +15,8 @@ import { UserResolver } from './user.resolver'
     UserResolver,
     {
       provide: APP_INTERCEPTOR,
-      useClass: DataLoaderInterceptor
-    }
-  ]
+      useClass: DataLoaderInterceptor,
+    },
+  ],
 })
 export class UserModule {}

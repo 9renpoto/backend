@@ -15,7 +15,7 @@ describe('UserDataLoader', () => {
   beforeEach(async () => {
     user = createMockRepository(User)
     const module: TestingModule = await Test.createTestingModule({
-      providers: [UserResolver, UserDataLoader, UserService, user]
+      providers: [UserResolver, UserDataLoader, UserService, user],
     }).compile()
 
     const dataLoader = await module.resolve<UserDataLoader>(UserDataLoader)

@@ -15,38 +15,38 @@ import stripeConfig from './config/stripe'
   imports: [
     ConfigModule.forRoot({
       ignoreEnvFile: true,
-      load: [databaseConfig, stripeConfig]
+      load: [databaseConfig, stripeConfig],
     }),
     GraphQLModule.forRoot({
       installSubscriptionHandlers: true,
       autoSchemaFile:
         process.env.NODE_ENV === 'production' ? true : `./src/schema.gql`,
-      context: ({ req }) => ({ req })
+      context: ({ req }) => ({ req }),
     }),
     StripeModule.forRootAsync({
       imports: [ConfigModule],
       inject: [ConfigService],
-      useFactory: (config: ConfigService) => config.get('stripe')
+      useFactory: (config: ConfigService) => config.get('stripe'),
     }),
     TypeOrmModule.forRootAsync({
       imports: [ConfigModule],
       inject: [ConfigService],
-      useFactory: (config: ConfigService) => config.get('database')
+      useFactory: (config: ConfigService) => config.get('database'),
     }),
     HealthModule,
     RavenModule,
-    UserModule
+    UserModule,
   ],
   providers: [
     AppService,
     {
       provide: APP_PIPE,
-      useClass: ValidationPipe
+      useClass: ValidationPipe,
     },
     {
       provide: APP_INTERCEPTOR,
-      useValue: new RavenInterceptor()
-    }
-  ]
+      useValue: new RavenInterceptor(),
+    },
+  ],
 })
 export class AppModule {}
