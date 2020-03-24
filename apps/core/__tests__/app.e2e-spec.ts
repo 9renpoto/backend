@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing'
 import {
   FastifyAdapter,
-  NestFastifyApplication
+  NestFastifyApplication,
 } from '@nestjs/platform-fastify'
 import { createTestClient } from 'apollo-server-testing'
 import { GraphQLModule } from '@nestjs/graphql'
@@ -15,7 +15,7 @@ describe('app (e2e)', () => {
 
   beforeEach(async () => {
     const moduleFixture: TestingModule = await Test.createTestingModule({
-      imports: [AppModule]
+      imports: [AppModule],
     }).compile()
     app = moduleFixture.createNestApplication<NestFastifyApplication>(
       new FastifyAdapter()
@@ -46,8 +46,8 @@ describe('app (e2e)', () => {
             }
           `,
           variables: {
-            input: { id: user.id }
-          }
+            input: { id: user.id },
+          },
         })
       ).data
     ).toBeDefined()

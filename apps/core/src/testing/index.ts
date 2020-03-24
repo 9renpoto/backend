@@ -11,9 +11,9 @@ function createBDConnection() {
   return createConnection({
     ...{
       ...config,
-      logging: false
+      logging: false,
     },
-    entities
+    entities,
   })
 }
 

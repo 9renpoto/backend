@@ -2,7 +2,7 @@ import {
   TerminusEndpoint,
   TerminusModuleOptions,
   TerminusOptionsFactory,
-  TypeOrmHealthIndicator
+  TypeOrmHealthIndicator,
 } from '@nestjs/terminus'
 import { Injectable } from '@nestjs/common'
 
@@ -17,11 +17,11 @@ export class TerminusOptionsService implements TerminusOptionsFactory {
       url: '/health',
       healthIndicators: [
         async () =>
-          this.typeOrmHealthIndicator.pingCheck('database', { timeout: 300 })
-      ]
+          this.typeOrmHealthIndicator.pingCheck('database', { timeout: 300 }),
+      ],
     }
     return {
-      endpoints: [healthEndpoint]
+      endpoints: [healthEndpoint],
     }
   }
 }

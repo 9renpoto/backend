@@ -5,9 +5,9 @@ import { TerminusOptionsService } from './health.service'
 @Module({
   imports: [
     TerminusModule.forRootAsync({
-      useClass: TerminusOptionsService
-    })
+      useClass: TerminusOptionsService,
+    }),
   ],
-  providers: [TerminusOptionsService]
+  providers: [TerminusOptionsService],
 })
 export class HealthModule {}
