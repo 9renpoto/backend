@@ -11,6 +11,6 @@ export class UserDataLoader implements NestDataLoader<string, User> {
   constructor(private readonly service: UserService) {}
 
   generateDataLoader(): UserLoader {
-    return new DataLoader(keys => this.service.find(keys))
+    return new DataLoader((keys) => this.service.find(keys))
   }
 }
