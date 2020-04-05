@@ -22,7 +22,7 @@
     "@nestjs/graphql": "^6.5.4",
     "@nestjs/platform-fastify": "^7.0.0",
     "@nestjs/swagger": "^4.2.10",
-    "@nestjs/terminus": "^6.5.5",
+    "@nestjs/terminus": "^7.0.0",
     "@nestjs/typeorm": "^6.2.0",
     "@types/graphql": "^14.5.0",
     "apollo-server-fastify": "^2.9.16",
