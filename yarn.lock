@@ -1477,16 +1477,6 @@
     webpack "4.42.1"
     webpack-node-externals "1.7.2"
 
-"@nestjs/common@^6.4.0":
-  version "6.11.7"
-  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-6.11.7.tgz#59b6e4a580b61f5d4964e4fca3a0cc8d52d73c5a"
-  integrity sha512-Rh3SYFAOLMlwZlWBsVNFo13Bt1NSoplOebs273w7ZRH8y3hTTsVcvJDKBAZ5a3RokEqYFZWjEXJpwRJ/7wzSNg==
-  dependencies:
-    axios "0.19.2"
-    cli-color "2.0.0"
-    tslib "1.10.0"
-    uuid "3.4.0"
-
 "@nestjs/common@^7.0.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-7.0.0.tgz#618535b1cc7ce7e097b1ed2efb2d1eee79862b07"
@@ -1507,19 +1497,6 @@
     lodash.get "4.4.2"
     lodash.set "4.3.2"
     uuid "7.0.2"
-
-"@nestjs/core@^6.4.0":
-  version "6.11.7"
-  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-6.11.7.tgz#b4e6d23674e95013eda3811f1965821c1117975a"
-  integrity sha512-91C6GPpMj/Zbnntxb9ANyBeFeZ3zIbYrUQgoYK6dHX38Fn/a0ptCuy7Rv9X8GGsTEt984+nhL18+IlglKHMNnw==
-  dependencies:
-    "@nuxtjs/opencollective" "0.2.2"
-    fast-safe-stringify "2.0.7"
-    iterare "1.2.0"
-    object-hash "2.0.2"
-    path-to-regexp "3.2.0"
-    tslib "1.10.0"
-    uuid "3.4.0"
 
 "@nestjs/core@^7.0.0":
   version "7.0.0"
@@ -1551,7 +1528,7 @@
   optionalDependencies:
     type-graphql "^0.17.3"
 
-"@nestjs/graphql@^6.5.3", "@nestjs/graphql@^6.5.4":
+"@nestjs/graphql@^6.5.4":
   version "6.5.4"
   resolved "https://registry.yarnpkg.com/@nestjs/graphql/-/graphql-6.5.4.tgz#4dc691ffc94d4ff86e10c9039cd303510e0afb7e"
   integrity sha512-t+l8+2SgY7u3yUDyzuffMD5728hdK9E8wX/AjCbm5PKDEMdDgNuA9pAj/UoRZNaeXYVcFazQZztMRMzHnMjHQg==
@@ -9113,14 +9090,11 @@ nest-raven@^5.0.0:
     apollo-server-express "^2.6.3"
     graphql "^14.3.1"
 
-nestjs-dataloader@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/nestjs-dataloader/-/nestjs-dataloader-2.0.0.tgz#6ed66c300824a0325f8450b4c2487b171a062569"
-  integrity sha512-WC35VgkQuD9+V+X9o/7m5qZ4Ns32g7fRPDqVqA2qAHrSnYgZEliNslzZp98IBsP0/ovViO6Jvf9tx5pRDJLyMA==
+nestjs-dataloader@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/nestjs-dataloader/-/nestjs-dataloader-7.0.0.tgz#b90d576e075eaa2b7ba0e00590aa20fa80b057ae"
+  integrity sha512-mUQFkGDH5c542NGc54o/ZYf9gobOUIYuPr9iU8kgq9TAeqaRIppV6FpsLMJxLvSxNva0WtWlNNd1mNXzYiQkbA==
   dependencies:
-    "@nestjs/common" "^6.4.0"
-    "@nestjs/core" "^6.4.0"
-    "@nestjs/graphql" "^6.5.3"
     dataloader "^2.0.0"
     rxjs "^6.5.4"
 
@@ -9413,11 +9387,6 @@ object-copy@^0.1.0:
     copy-descriptor "^0.1.0"
     define-property "^0.2.5"
     kind-of "^3.0.3"
-
-object-hash@2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/object-hash/-/object-hash-2.0.2.tgz#f7b2212dbe07d07e340ccd6004c59504fc4015cf"
-  integrity sha512-b+2AKjAf6uQlxxv8ChHdM+VT4eeX+ZSwv+pk2xIXZWbo+yxn4/En1iC+GHe/OFYa9on0AhFF2PvuAcFHoiiHaA==
 
 object-hash@2.0.3:
   version "2.0.3"
@@ -13025,11 +12994,6 @@ uuid@3.3.3, uuid@^3.0.1, uuid@^3.1.0, uuid@^3.3.2:
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.3.tgz#4568f0216e78760ee1dbf3a4d2cf53e224112866"
   integrity sha512-pW0No1RGHgzlpHJO1nsVrHKpOEIxkGg1xB+v0ZmdNH5OAeAwzAVrCnI2/6Mtx+Uys6iaylxa+D3g4j63IKKjSQ==
-
-uuid@3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
-  integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
 
 uuid@7.0.2:
   version "7.0.2"
