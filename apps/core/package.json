@@ -35,7 +35,7 @@
     "graphql-tag-pluck": "0.8.7",
     "nest-raven": "^5.0.0",
     "nestjs-dataloader": "^2.0.0",
-    "nestjs-stripe": "0.3.0",
+    "nestjs-stripe": "0.4.0",
     "pg": "^8.0.0",
     "reflect-metadata": "0.1.13",
     "rxjs": "^6.5.4",
