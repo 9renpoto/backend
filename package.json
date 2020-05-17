@@ -36,7 +36,7 @@
     "textlint": "11.6.3",
     "ts-jest": "26.0.0",
     "ts-node": "8.10.1",
-    "tsc-watch": "4.2.5",
+    "tsc-watch": "4.2.6",
     "tsconfig-paths": "3.9.0",
     "typescript": "3.7.5"
   },
