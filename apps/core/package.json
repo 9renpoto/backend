@@ -42,7 +42,7 @@
     "stripe": "^8.19.0",
     "type-graphql": "0.17.6",
     "typedi": "0.8.0",
-    "typeorm": "0.2.24",
+    "typeorm": "0.2.25",
     "typeorm-naming-strategies": "^1.1.0",
     "typeorm-test-transactions": "^1.9.0",
     "typeorm-transactional-cls-hooked": "0.1.12"
