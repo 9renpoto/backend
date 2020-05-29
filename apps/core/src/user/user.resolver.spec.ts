@@ -1,14 +1,15 @@
+import '../testing'
+import DataLoader from 'dataloader'
 import { Test, TestingModule } from '@nestjs/testing'
 import { createMockRepository } from '../testing/entity'
 import { UserResolver } from './user.resolver'
 import { UserFactory } from './user.factory'
-import { UserDataLoader, UserLoader } from './user.loader'
+import { UserDataLoader } from './user.loader'
 import { UserService } from './user.service'
 import { User } from './user.entity'
-import '../testing'
 
 describe('UserResolver', () => {
-  let loader: UserLoader
+  let loader: DataLoader<string, User>
   let resolver: UserResolver
   let user: ReturnType<typeof createMockRepository>
 

@@ -18,15 +18,19 @@ function createBDConnection() {
 }
 
 async function cleanDB(connection: Connection) {
-  try {
-    for (const entity of entities) {
-      const repo = await getRepository(entity)
-      await repo.query(`DELETE FROM ${repo.metadata.tableName};`)
-    }
-  } catch (err) {
-    connection.close()
-    throw new Error(`ERROR: Cleaning test db: ${err}`)
-  }
+  return connection.transaction((manager) =>
+    Promise.all(
+      entities.map(async (entity) => {
+        try {
+          const repo = await manager.getRepository(entity)
+          return repo.query(`DELETE FROM ${repo.metadata.tableName};`)
+        } catch (err) {
+          await connection.close()
+          throw new Error(`ERROR: Cleaning test db: ${err}`)
+        }
+      })
+    )
+  )
 }
 
 let connection: Connection

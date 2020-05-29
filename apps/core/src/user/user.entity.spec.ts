@@ -1,5 +1,5 @@
-import { UserFactory } from './user.factory'
 import '../testing'
+import { UserFactory } from './user.factory'
 
 describe('UserEntity', () => {
   it('factory', async () => {
