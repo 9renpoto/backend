@@ -5,8 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc -p .",
-    "clean": "rimraf lib",
-    "lint": "tsc -p . --noEmit"
+    "clean": "rimraf lib"
   },
   "files": [
     "lib"

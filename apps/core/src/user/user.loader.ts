@@ -10,7 +10,8 @@ export type UserLoader = DataLoader<string, User>
 export class UserDataLoader implements NestDataLoader<string, User> {
   constructor(private readonly service: UserService) {}
 
-  generateDataLoader(): UserLoader {
-    return new DataLoader((keys) => this.service.find(keys))
+  generateDataLoader(): any {
+    // DataLoader<string, User> {
+    return new DataLoader<string, User>((keys) => this.service.find(keys))
   }
 }

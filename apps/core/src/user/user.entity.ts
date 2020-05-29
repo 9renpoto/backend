@@ -1,4 +1,4 @@
-import { ObjectType, ID, Field } from 'type-graphql'
+import { ObjectType, ID, Field } from '@nestjs/graphql'
 import { BaseRepository } from 'typeorm-transactional-cls-hooked'
 import {
   EntityRepository,

@@ -8,7 +8,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x]
+        node-version: [12.x, 14.x]
 
     services:
       postgres:
@@ -30,7 +30,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: npm install, build, and test
         run: |
-          yarn install --production
+          yarn install --production --frozen-lockfile
           yarn build
           yarn
           yarn lint

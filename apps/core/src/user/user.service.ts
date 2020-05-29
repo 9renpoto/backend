@@ -8,7 +8,7 @@ export class UserService {
 
   async find(ids: readonly string[]) {
     return this.repo.find({
-      where: { id: In(ids as string[]) },
+      id: In(ids as string[]),
     })
   }
 }
