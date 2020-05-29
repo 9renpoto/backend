@@ -27,7 +27,7 @@
     "class-transformer": "0.2.3",
     "class-validator": "0.12.2",
     "fastify-swagger": "^2.5.0",
-    "graphql": "^14.6.0",
+    "graphql": "^15.0.0",
     "graphql-relay": "0.6.0",
     "graphql-tag-pluck": "0.8.7",
     "nest-raven": "^6.0.0-alpha.2",
