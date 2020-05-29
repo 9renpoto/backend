@@ -17,7 +17,7 @@
     "@nestjs/common": "^7.0.0",
     "@nestjs/config": "0.5.0",
     "@nestjs/core": "^7.0.0",
-    "@nestjs/graphql": "^7.3.11",
+    "@nestjs/graphql": "^7.4.0",
     "@nestjs/platform-fastify": "^7.0.0",
     "@nestjs/swagger": "^4.2.10",
     "@nestjs/terminus": "^7.0.0",
@@ -47,7 +47,7 @@
     "@nestjs/cli": "7.2.0",
     "@nestjs/schematics": "7.0.0",
     "@nestjs/testing": "7.1.1",
-    "apollo-server-testing": "2.13.1",
+    "apollo-server-testing": "2.14.1",
     "typeorm-factory": "0.0.14"
   },
   "jest": {
