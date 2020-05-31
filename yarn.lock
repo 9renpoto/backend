@@ -8799,10 +8799,10 @@ neo-async@^2.5.0, neo-async@^2.6.0, neo-async@^2.6.1:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
   integrity sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
 
-nest-raven@^6.0.0-alpha.2:
-  version "6.0.0-alpha.2"
-  resolved "https://registry.yarnpkg.com/nest-raven/-/nest-raven-6.0.0-alpha.2.tgz#4832b1f2397e75bdc4edf5cc93ed4eca1cefcd01"
-  integrity sha512-/RWUkkNzJBV+lMvTN1f/aDrPrtswvxK5Y+QmyHv20nAePbfZ3Rd0F0tB3yc4k98oKwKelJUn4qkWXkpw73oSXA==
+nest-raven@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/nest-raven/-/nest-raven-6.0.0.tgz#1d0988b61ff8e36d1b9e9c137488e63a0d4164cc"
+  integrity sha512-Id4QzAWxnj0OffntzWiNAW+V7zupdSjKRuG9pKyVA31fVd52VxOHczArCPBDuDxxN7u4XpqUsBVbznfy5ei6uw==
   dependencies:
     "@sentry/minimal" "^5.12.0"
     "@sentry/node" "^5.12.3"

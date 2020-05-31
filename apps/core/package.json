@@ -30,7 +30,7 @@
     "graphql": "^15.0.0",
     "graphql-relay": "0.6.0",
     "graphql-tag-pluck": "0.8.7",
-    "nest-raven": "^6.0.0-alpha.2",
+    "nest-raven": "^6.0.0",
     "nestjs-dataloader": "^7.0.1",
     "nestjs-stripe": "0.4.0",
     "pg": "^8.0.0",
