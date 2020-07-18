@@ -24,7 +24,7 @@
     "@9renpoto/eslint-config-typescript": "6.0.0",
     "@9renpoto/textlint-config-ja": "6.0.0",
     "@types/faker": "4.1.12",
-    "@types/jest": "26.0.4",
+    "@types/jest": "26.0.5",
     "eslint": "7.4.0",
     "faker": "4.1.0",
     "husky": "4.2.5",
