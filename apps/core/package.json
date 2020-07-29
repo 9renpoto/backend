@@ -24,7 +24,7 @@
     "@nestjs/typeorm": "^7.0.0",
     "@types/graphql": "^14.5.0",
     "apollo-server-fastify": "^2.9.16",
-    "class-transformer": "0.2.3",
+    "class-transformer": "0.3.1",
     "class-validator": "0.12.2",
     "fastify-swagger": "^3.0.0",
     "graphql": "^15.0.0",
