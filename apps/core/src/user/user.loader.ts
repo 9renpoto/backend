@@ -1,8 +1,8 @@
-import DataLoader from 'dataloader'
 import { Injectable } from '@nestjs/common'
+import DataLoader from 'dataloader'
 import { NestDataLoader } from 'nestjs-dataloader'
-import { UserService } from './user.service'
 import { User } from './user.entity'
+import { UserService } from './user.service'
 
 export type UserLoader = DataLoader<string, User>
 

@@ -1,11 +1,11 @@
+import { Test, TestingModule } from '@nestjs/testing'
 import '../testing'
-import { TestingModule, Test } from '@nestjs/testing'
 import { createMockRepository } from '../testing/entity'
+import { User } from './user.entity'
+import { UserFactory } from './user.factory'
 import { UserDataLoader, UserLoader } from './user.loader'
 import { UserResolver } from './user.resolver'
 import { UserService } from './user.service'
-import { User } from './user.entity'
-import { UserFactory } from './user.factory'
 
 describe('UserDataLoader', () => {
   let loader: UserLoader

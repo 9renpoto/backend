@@ -1,10 +1,10 @@
+import { Injectable } from '@nestjs/common'
 import {
   TerminusEndpoint,
   TerminusModuleOptions,
   TerminusOptionsFactory,
   TypeOrmHealthIndicator,
 } from '@nestjs/terminus'
-import { Injectable } from '@nestjs/common'
 
 @Injectable()
 export class TerminusOptionsService implements TerminusOptionsFactory {

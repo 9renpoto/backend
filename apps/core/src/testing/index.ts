@@ -1,4 +1,4 @@
-import { getRepository, Connection, createConnection } from 'typeorm'
+import { Connection, createConnection } from 'typeorm'
 import { initialiseTestTransactions } from 'typeorm-test-transactions'
 import { config } from '../config/database'
 import { User } from '../user/user.entity'

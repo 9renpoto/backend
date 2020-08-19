@@ -1,14 +1,14 @@
-import * as fs from 'fs'
 import { NestFactory } from '@nestjs/core'
-import {
-  initializeTransactionalContext,
-  patchTypeORMRepositoryWithBaseRepository,
-} from 'typeorm-transactional-cls-hooked'
-import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger'
 import {
   FastifyAdapter,
   NestFastifyApplication,
 } from '@nestjs/platform-fastify'
+import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger'
+import * as fs from 'fs'
+import {
+  initializeTransactionalContext,
+  patchTypeORMRepositoryWithBaseRepository,
+} from 'typeorm-transactional-cls-hooked'
 import { AppModule } from './app.module'
 
 const { version, name, description } = require('../package.json')

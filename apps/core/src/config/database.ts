@@ -1,7 +1,7 @@
+import { registerAs } from '@nestjs/config'
 import { join } from 'path'
 import { ConnectionOptions } from 'typeorm'
 import { SnakeNamingStrategy } from 'typeorm-naming-strategies'
-import { registerAs } from '@nestjs/config'
 
 export const config: ConnectionOptions = {
   type: 'postgres',

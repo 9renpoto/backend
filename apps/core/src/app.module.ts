@@ -1,15 +1,15 @@
-import { ConfigModule, ConfigService } from '@nestjs/config'
-import { GraphQLModule } from '@nestjs/graphql'
 import { Module, ValidationPipe } from '@nestjs/common'
-import { RavenModule, RavenInterceptor } from 'nest-raven'
-import { StripeModule } from 'nestjs-stripe'
+import { ConfigModule, ConfigService } from '@nestjs/config'
+import { APP_INTERCEPTOR, APP_PIPE } from '@nestjs/core'
+import { GraphQLModule } from '@nestjs/graphql'
 import { TypeOrmModule } from '@nestjs/typeorm'
-import { APP_PIPE, APP_INTERCEPTOR } from '@nestjs/core'
+import { RavenInterceptor, RavenModule } from 'nest-raven'
+import { StripeModule } from 'nestjs-stripe'
 import { AppService } from './app.service'
-import { HealthModule } from './health/health.module'
-import { UserModule } from './user/user.module'
 import databaseConfig from './config/database'
 import stripeConfig from './config/stripe'
+import { HealthModule } from './health/health.module'
+import { UserModule } from './user/user.module'
 
 @Module({
   imports: [
