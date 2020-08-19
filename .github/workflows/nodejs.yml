@@ -34,6 +34,7 @@ jobs:
           yarn build
           yarn lint
           yarn test
+          yarn coverage
         env:
           CI: true
           POSTGRES_HOST: postgres
