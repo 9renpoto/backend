@@ -5277,7 +5277,7 @@ eslint-module-utils@^2.6.0:
     debug "^2.6.9"
     pkg-dir "^2.0.0"
 
-eslint-plugin-import@^2.22.0:
+eslint-plugin-import@2.22.0:
   version "2.22.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.22.0.tgz#92f7736fe1fde3e2de77623c838dd992ff5ffb7e"
   integrity sha512-66Fpf1Ln6aIS5Gr/55ts19eUuoDhAbZgnr6UxK5hbDx6l/QgQgx61AePq+BV4PP2uXQFClgMVzep5zZ94qqsxg==
@@ -7974,7 +7974,7 @@ lazystream@^1.0.0:
   dependencies:
     readable-stream "^2.0.5"
 
-lcov-result-merger@^3.1.0:
+lcov-result-merger@3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/lcov-result-merger/-/lcov-result-merger-3.1.0.tgz#ae6d1be663dbf7d586d8004642359d39de72039e"
   integrity sha512-vGXaMNGZRr4cYvW+xMVg+rg7qd5DX9SbGXl+0S3k85+gRZVK4K7UvxPWzKb/qiMwe+4bx3EOrW2o4mbdb1WnsA==
@@ -10081,7 +10081,7 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier-plugin-organize-imports@^1.1.1:
+prettier-plugin-organize-imports@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/prettier-plugin-organize-imports/-/prettier-plugin-organize-imports-1.1.1.tgz#7f1ac1a13d4d1752dc16881894dde1c10ccbf3c0"
   integrity sha512-rFA1lnek1FYkMGthm4xBKME41qUKItTovuo24bCGZu/Vu1n3gW71UPLAkIdwewwkZCe29gRVweSOPXvAdckFuw==
