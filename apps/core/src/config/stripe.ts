@@ -1,5 +1,5 @@
-import { StripeOptions } from 'nestjs-stripe'
 import { registerAs } from '@nestjs/config'
+import { StripeOptions } from 'nestjs-stripe'
 
 const config: StripeOptions = {
   apiKey: process.env.STRIPE_KEY!,

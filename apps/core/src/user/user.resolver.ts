@@ -1,8 +1,8 @@
-import { Loader } from 'nestjs-dataloader'
+import { Args, Field, InputType, Query, Resolver } from '@nestjs/graphql'
 import DataLoader from 'dataloader'
-import { Resolver, Query, Args, InputType, Field } from '@nestjs/graphql'
-import { UserDataLoader } from './user.loader'
+import { Loader } from 'nestjs-dataloader'
 import { User } from './user.entity'
+import { UserDataLoader } from './user.loader'
 
 @InputType()
 class UserInput implements Partial<User> {

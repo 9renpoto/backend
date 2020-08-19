@@ -6,6 +6,7 @@
     "build": "lerna run build --parallel",
     "bump": "lerna version --no-git-tag-version --no-push && lerna-changelog",
     "clean": "lerna run clean --parallel && lerna clean",
+    "coverage": "mkdir coverage && lcov-result-merger '{packages,apps}/*/coverage/lcov.info' > coverage/lcov.info",
     "lint": "run-s -l lint:*",
     "lint:eslint": "npx eslint . --ext=ts,tsx",
     "lint:md": "textlint README.md packages/*.md packages/**/*.md",
@@ -21,17 +22,20 @@
     "typescript": "3.9.7"
   },
   "devDependencies": {
-    "@9renpoto/eslint-config-typescript": "6.0.0",
-    "@9renpoto/textlint-config-ja": "6.0.0",
+    "@9renpoto/eslint-config-typescript": "7.0.1",
+    "@9renpoto/textlint-config-ja": "7.0.1",
     "@types/faker": "4.1.12",
-    "@types/jest": "26.0.8",
+    "@types/jest": "26.0.10",
     "eslint": "7.5.0",
+    "eslint-plugin-import": "^2.22.0",
     "faker": "4.1.0",
     "husky": "4.2.5",
     "jest": "26.3.0",
+    "lcov-result-merger": "^3.1.0",
     "lerna-changelog": "1.0.1",
     "lint-staged": "10.2.11",
     "prettier": "2.0.5",
+    "prettier-plugin-organize-imports": "^1.1.1",
     "prettier-plugin-package": "1.0.0",
     "supertest": "4.0.2",
     "textlint": "11.7.6",
@@ -52,7 +56,6 @@
   },
   "prettier": {
     "semi": false,
-    "jsxSingleQuote": true,
     "singleQuote": true
   },
   "workspaces": [

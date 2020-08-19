@@ -1,5 +1,5 @@
-import { Test, TestingModule } from '@nestjs/testing'
 import { TypeOrmHealthIndicator } from '@nestjs/terminus'
+import { Test, TestingModule } from '@nestjs/testing'
 import { TerminusOptionsService as HealthService } from './health.service'
 
 describe('HealthService', () => {

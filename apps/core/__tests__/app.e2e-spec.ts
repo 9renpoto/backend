@@ -1,10 +1,10 @@
-import { Test, TestingModule } from '@nestjs/testing'
+import { GraphQLModule } from '@nestjs/graphql'
 import {
   FastifyAdapter,
   NestFastifyApplication,
 } from '@nestjs/platform-fastify'
+import { Test, TestingModule } from '@nestjs/testing'
 import { createTestClient } from 'apollo-server-testing'
-import { GraphQLModule } from '@nestjs/graphql'
 import gql from 'graphql-tag'
 import { AppModule } from '../src/app.module'
 import { UserFactory } from '../src/user/user.factory'
