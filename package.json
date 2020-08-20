@@ -15,34 +15,31 @@
     "release": "lerna exec --no-bail -- 'can-npm-publish && npm publish --registry=\"https://registry.npmjs.org/\"'",
     "test": "lerna run test -- -w 1"
   },
-  "dependencies": {
-    "lerna": "3.22.1",
-    "npm-run-all": "4.1.5",
-    "rimraf": "3.0.2",
-    "typescript": "3.9.7"
-  },
   "devDependencies": {
     "@9renpoto/eslint-config-typescript": "7.0.2",
     "@9renpoto/textlint-config-ja": "7.0.2",
     "@types/faker": "4.1.12",
     "@types/jest": "26.0.10",
     "eslint": "7.7.0",
-    "eslint-plugin-import": "2.22.0",
     "faker": "4.1.0",
     "husky": "4.2.5",
     "jest": "26.4.0",
     "lcov-result-merger": "3.1.0",
+    "lerna": "3.22.1",
     "lerna-changelog": "1.0.1",
     "lint-staged": "10.2.11",
+    "npm-run-all": "4.1.5",
     "prettier": "2.0.5",
     "prettier-plugin-organize-imports": "1.1.1",
     "prettier-plugin-package": "1.0.0",
+    "rimraf": "3.0.2",
     "supertest": "4.0.2",
     "textlint": "11.7.6",
     "ts-jest": "26.2.0",
     "ts-node": "8.10.2",
     "tsc-watch": "4.2.9",
-    "tsconfig-paths": "3.9.0"
+    "tsconfig-paths": "3.9.0",
+    "typescript": "3.9.7"
   },
   "husky": {
     "hooks": {
