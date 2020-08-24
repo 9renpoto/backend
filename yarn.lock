@@ -1511,7 +1511,7 @@
     tslib "2.0.0"
     uuid "8.3.0"
 
-"@nestjs/graphql@^7.4.0":
+"@nestjs/graphql@^6.2.4 || ^7.0.0", "@nestjs/graphql@^7.4.0":
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/@nestjs/graphql/-/graphql-7.6.0.tgz#1db5db1e9772a9c75dadae59dfe563fad69816d2"
   integrity sha512-pBxeHdlJES+ZPh98d9eHTk/OJZvAoy6Mxo08mPG2UMXV09D9oJZTPs8ukPY16bAaf5vHYb8HmEaeSXkzdHCB9w==
@@ -8918,13 +8918,15 @@ neo-async@^2.5.0, neo-async@^2.6.0, neo-async@^2.6.1:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
-nest-raven@^6.0.0-alpha.2:
-  version "6.0.0-alpha.2"
-  resolved "https://registry.yarnpkg.com/nest-raven/-/nest-raven-6.0.0-alpha.2.tgz#4832b1f2397e75bdc4edf5cc93ed4eca1cefcd01"
-  integrity sha512-/RWUkkNzJBV+lMvTN1f/aDrPrtswvxK5Y+QmyHv20nAePbfZ3Rd0F0tB3yc4k98oKwKelJUn4qkWXkpw73oSXA==
+nest-raven@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/nest-raven/-/nest-raven-7.0.0.tgz#be81241b817bdf09f8650bc9de0c73db0bf5392d"
+  integrity sha512-RNMx0pw4R57m9I7cFHq/dNI5X2XPYCqSz6gOnDWUk/pSYo2cA8AecThlK8ShPFNdSqt6QTvTiBRO9ci1qVfVrA==
   dependencies:
     "@sentry/minimal" "^5.12.0"
     "@sentry/node" "^5.12.3"
+  optionalDependencies:
+    "@nestjs/graphql" "^6.2.4 || ^7.0.0"
 
 nestjs-dataloader@^7.0.1:
   version "7.0.1"
