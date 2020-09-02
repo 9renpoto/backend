@@ -12597,10 +12597,10 @@ typeorm-factory@0.0.14:
   resolved "https://registry.yarnpkg.com/typeorm-factory/-/typeorm-factory-0.0.14.tgz#bbc56a61684238ac9e3a1c88cbab508efe422ba1"
   integrity sha512-PdCEnprw2YDbFJ50mCtPr+IOQa5Y9Yv7l3DDmqNEJPROwK48znvQEHVRA9bWR2ByjaZDfmRMWo7+/Q+WkDPOgw==
 
-typeorm-naming-strategies@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/typeorm-naming-strategies/-/typeorm-naming-strategies-1.1.0.tgz#29ce8ce1804bc0e4a56302d54e6a746561a94088"
-  integrity sha512-Nu1E4M8lclapX3rdQhQcJKkBjTtmTV4HLWg3M2wouS1ucvnjLPQE1XapOipfmX90LJEVeBwIVh1iPvtf4C5htA==
+typeorm-naming-strategies@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/typeorm-naming-strategies/-/typeorm-naming-strategies-2.0.0.tgz#c7c10bc768ddce2592ef9ad4d2dca55fd5fa6ad6"
+  integrity sha512-nsJ5jDjhBBEG6olFmxojkO4yrW7hEv38sH7ZXWWx9wnDoo9uaoH/mo2mBYAh/VKgwoFHBLu+CYxGmzXz2GUMcA==
 
 typeorm-test-transactions@^1.9.0:
   version "1.11.1"
