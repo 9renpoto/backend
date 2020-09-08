@@ -20,7 +20,7 @@
     "@9renpoto/textlint-config-ja": "7.0.3",
     "@types/faker": "5.1.0",
     "@types/jest": "26.0.13",
-    "eslint": "7.8.0",
+    "eslint": "7.8.1",
     "faker": "5.1.0",
     "husky": "4.2.5",
     "jest": "26.4.2",
