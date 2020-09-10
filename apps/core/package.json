@@ -38,7 +38,7 @@
     "rxjs": "^6.5.4",
     "stripe": "^8.19.0",
     "typedi": "0.8.0",
-    "typeorm": "0.2.25",
+    "typeorm": "0.2.26",
     "typeorm-naming-strategies": "^2.0.0",
     "typeorm-test-transactions": "^1.9.0",
     "typeorm-transactional-cls-hooked": "0.1.12"
