@@ -9,7 +9,7 @@ updates:
     assignees:
       - 9renpoto
     labels:
-      - 'Type: dependencies'
+      - 'Type: Dependencies'
   - package-ecosystem: 'npm'
     directory: '/'
     schedule:
@@ -19,4 +19,4 @@ updates:
     assignees:
       - 9renpoto
     labels:
-      - 'Type: dependencies'
+      - 'Type: Dependencies'
