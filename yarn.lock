@@ -11811,9 +11811,9 @@ strip-json-comments@^3.1.0, strip-json-comments@^3.1.1:
   integrity sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
 
 stripe@^8.19.0:
-  version "8.88.0"
-  resolved "https://registry.yarnpkg.com/stripe/-/stripe-8.88.0.tgz#ba7e9eec21bbf5459491366081d04a811b55f0de"
-  integrity sha512-aeixfX6Gem5UiRdoH9wphQ344abxgAQrLg2sAY/0IddZ5mprZKS568Pb3WX0qy2E5OJGute+jEAn2Za7DKLQtw==
+  version "8.109.0"
+  resolved "https://registry.yarnpkg.com/stripe/-/stripe-8.109.0.tgz#8b7273686d0eedd8d4b865af6518486794b27301"
+  integrity sha512-nIumYKea04WXIFfzdPcpzozU93kx5iA5wyMrMM/hHZS1tWQ9T4I7bddpH8w6mJS0LoOEnDRmXvPZlJ+tyYL2EQ==
   dependencies:
     "@types/node" ">=8.1.0"
     qs "^6.6.0"
