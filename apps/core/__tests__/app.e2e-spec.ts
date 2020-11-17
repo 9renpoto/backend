@@ -23,8 +23,9 @@ describe('app (e2e)', () => {
     await app.init()
 
     // apolloServer is protected, we need to cast module to any to get it
-    const { apolloServer } = moduleFixture.get(GraphQLModule)
-    apolloClient = createTestClient(apolloServer)
+    apolloClient = createTestClient(
+      (moduleFixture.get(GraphQLModule) as any).apolloServer
+    )
   })
 
   afterEach(() => app.close())
