@@ -41,8 +41,7 @@
     "ts-jest": "26.4.4",
     "ts-node": "9.0.0",
     "tsc-watch": "4.2.9",
-    "tsconfig-paths": "3.9.0",
-    "typescript": "3.9.7"
+    "tsconfig-paths": "3.9.0"
   },
   "husky": {
     "hooks": {
