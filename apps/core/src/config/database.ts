@@ -9,6 +9,10 @@ export const config: ConnectionOptions = {
   username: process.env.POSTGRES_USER,
   password: process.env.POSTGRES_PASSWORD,
   database: process.env.POSTGRES_DB,
+  port:
+    typeof process.env.DATABASE_PORT === 'undefined'
+      ? 5432
+      : Number(process.env.DATABASE_PORT),
   entities: [join(__dirname, '../**/*.entity.[t|j]s')],
   extra: process.env.NODE_ENV === 'production' && {
     socketPath: process.env.DATABASE_HOST,
