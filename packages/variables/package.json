@@ -5,7 +5,8 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc -p .",
-    "clean": "rimraf lib"
+    "clean": "rimraf lib",
+    "prebuild": "npm run clean"
   },
   "files": [
     "lib"
