@@ -1,15 +1,10 @@
 {
   "name": "@9renpoto/nexus-prisma",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "devDependencies": {
-    "@prisma/cli": "^2.11.0",
-    "ts-node-dev": "^1.0.0"
-  },
+  "private": true,
   "scripts": {
     "build": "yarn build:reflection && tsc -p .",
-    "build:reflection": "NEXUS_SHOULD_EXIT_AFTER_REFLECTION=true ts-node api",
+    "build:reflection": "NEXUS_SHOULD_EXIT_AFTER_REFLECTION=true ts-node tools/generate.ts",
     "dev": "ts-node-dev --transpile-only api",
     "dev:migrate": "prisma migrate save --experimental -c && prisma migrate up --experimental -c",
     "dev:typecheck": "tsc --watch --noEmit",
@@ -21,5 +16,9 @@
     "apollo-server-express": "^2.19.0",
     "graphql-scalars": "^1.4.1",
     "nexus-plugin-prisma": "^0.24.0"
+  },
+  "devDependencies": {
+    "@prisma/cli": "^2.11.0",
+    "ts-node-dev": "^1.0.0"
   }
 }

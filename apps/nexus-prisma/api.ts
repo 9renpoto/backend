@@ -25,7 +25,10 @@ const schema = makeSchema({
     sources: [{ source: '.prisma/client', alias: 'PrismaClient' }],
   },
   outputs: {
-    typegen: path.join(__dirname, 'typegen-nexus/index.d.ts'),
+    typegen: path.join(
+      __dirname,
+      'node_modules/@types/typegen-nexus/index.d.ts'
+    ),
     schema: path.join(__dirname, './api.graphql'),
   },
   plugins: [
@@ -115,7 +118,7 @@ const http = HTTP.createServer(app)
 apollo.applyMiddleware({ app })
 apollo.installSubscriptionHandlers(http)
 
-http.listen(4000, () => {
+export const server = http.listen(4000, () => {
   // eslint-disable-next-line no-console
   console.log(`🚀 GraphQL service ready at http://localhost:4000/graphql`)
 })
