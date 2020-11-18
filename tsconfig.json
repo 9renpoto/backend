@@ -7,6 +7,6 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "preserveSymlinks": true,
-    "strictPropertyInitialization": true,
+    "strictPropertyInitialization": true
   }
 }
