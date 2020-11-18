@@ -41,10 +41,10 @@
     textlint-rule-preset-ja-spacing "^2.0.1"
     textlint-rule-preset-jtf-style "^2.3.4"
 
-"@9renpoto/tsconfig@7.2.0":
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/@9renpoto/tsconfig/-/tsconfig-7.2.0.tgz#1bcc8c684f7eef409eba56b5c1cbb4cfdd99b60e"
-  integrity sha512-dJXmVY+0GY9FTKhPpYIowRib+FSQuUD109T/tXb0Av17dK/g4a3whc/GU32804ySKLPjhOCLsXVcaea9ysVLTA==
+"@9renpoto/tsconfig@7.3.0":
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/@9renpoto/tsconfig/-/tsconfig-7.3.0.tgz#bf0c67ce0e12dc02826d4a9a6ce318ed10016394"
+  integrity sha512-fbq6ree2d0AP4VzOnBKEWSB3sJ+Htpboq/Fk8FTKbtKab86vi44JmTN3yqEz7rh/pJoaXEx+thXaGYdhwToN3g==
 
 "@angular-devkit/core@11.0.1":
   version "11.0.1"
