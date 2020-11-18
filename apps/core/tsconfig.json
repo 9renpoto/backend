@@ -1,10 +1,15 @@
 {
-  "extends": "../../tsconfig.json",
   "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "target": "es2017",
+    "sourceMap": true,
     "outDir": "./dist",
-    "strictPropertyInitialization": false,
-    "noUnusedParameters": false
+    "incremental": true,
+    "esModuleInterop": true
   },
   "exclude": ["node_modules", "dist"]
 }
