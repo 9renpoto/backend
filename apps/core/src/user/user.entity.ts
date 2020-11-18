@@ -17,6 +17,10 @@ export class User {
   @Field()
   @Column()
   readonly name: string
+
+  @Field()
+  @Column({ unique: true })
+  readonly email: string
 }
 
 @EntityRepository(User)
