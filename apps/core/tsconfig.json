@@ -3,7 +3,8 @@
   "compilerOptions": {
     "target": "es2017",
     "outDir": "./dist",
-    "strictPropertyInitialization": true
+    "strictPropertyInitialization": false,
+    "noUnusedParameters": false
   },
   "exclude": ["node_modules", "dist"]
 }

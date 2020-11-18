@@ -26,12 +26,12 @@ import { UserModule } from './user/user.module'
     StripeModule.forRootAsync({
       imports: [ConfigModule],
       inject: [ConfigService],
-      useFactory: (config: ConfigService) => config.get('stripe'),
+      useFactory: (config: ConfigService) => config.get('stripe') as any,
     }),
     TypeOrmModule.forRootAsync({
       imports: [ConfigModule],
       inject: [ConfigService],
-      useFactory: (config: ConfigService) => config.get('database'),
+      useFactory: (config: ConfigService) => config.get('database') as any,
     }),
     HealthModule,
     RavenModule,
