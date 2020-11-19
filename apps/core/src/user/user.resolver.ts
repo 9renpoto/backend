@@ -13,4 +13,12 @@ export class UserResolver {
   ): Promise<User> {
     return loader.load(id)
   }
+
+  @Query(() => [User])
+  async users(
+    @Args({ name: 'ids', type: () => [ID] }) ids: string[],
+    @Loader(UserDataLoader.name) loader: DataLoader<string, User>
+  ): Promise<(User | Error)[]> {
+    return loader.loadMany(ids)
+  }
 }

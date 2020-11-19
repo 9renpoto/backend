@@ -65,10 +65,7 @@ const schema = makeSchema({
       name: 'User',
       definition(t) {
         t.model.id()
-        t.model.metadata()
         t.model.email()
-        t.model.birthDate()
-        t.model.posts()
       },
     }),
     objectType({

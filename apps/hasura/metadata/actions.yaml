@@ -1,6 +1,11 @@
-actions: []
+actions:
+- name: userLogin
+  definition:
+    kind: synchronous
+    handler: http://localhost:3000/userLogin
 custom_types:
   enums: []
   input_objects: []
-  objects: []
+  objects:
+  - name: UserInfo
   scalars: []

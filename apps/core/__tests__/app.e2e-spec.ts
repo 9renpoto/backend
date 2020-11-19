@@ -39,7 +39,7 @@ describe('app (e2e)', () => {
       await (
         await query({
           query: gql`
-            query getUser($input: UserInput!) {
+            query getUser($input: ID!) {
               user(id: $input) {
                 id
                 name
@@ -47,7 +47,7 @@ describe('app (e2e)', () => {
             }
           `,
           variables: {
-            input: { id: user.id },
+            id: user.id,
           },
         })
       ).data

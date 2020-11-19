@@ -1,2 +1,8 @@
+extend type Mutation {
+  userLogin(username: String!, password: String!): UserInfo
+}
 
-
+type UserInfo {
+  accessToken: String!
+  userId: Int!
+}
