@@ -45,8 +45,27 @@ jobs:
         uses: coverallsapp/github-action@v1.1.2
         with:
           github-token: ${{ secrets.github_token }}
+          flag-name: variables
+          base-path: packages/variables
+          parallel: true
+      - name: Coveralls
+        uses: coverallsapp/github-action@v1.1.2
+        with:
+          github-token: ${{ secrets.github_token }}
+          flag-name: "@9renpoto/core"
+          base-path: apps/core
+          parallel: true
       - uses: codecov/codecov-action@v1.0.15
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           file: ./apps/core/coverage/*
           name: apps/core
+  finish:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Coveralls Finished
+        uses: coverallsapp/github-action@v1.1.2
+        with:
+          github-token: ${{ secrets.github_token }}
+          parallel-finished: true
