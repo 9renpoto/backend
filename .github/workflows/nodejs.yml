@@ -55,11 +55,6 @@ jobs:
           flag-name: "@9renpoto/core"
           base-path: apps/core
           parallel: true
-      - uses: codecov/codecov-action@v1.0.15
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          file: ./apps/core/coverage/*
-          name: apps/core
   finish:
     needs: build
     runs-on: ubuntu-latest
