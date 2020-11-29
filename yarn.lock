@@ -12685,18 +12685,10 @@ typeorm-test-transactions@^1.9.0:
   dependencies:
     typeorm-transactional-cls-hooked "^0.1.12"
 
-typeorm-transactional-cls-hooked@0.1.16:
-  version "0.1.16"
-  resolved "https://registry.yarnpkg.com/typeorm-transactional-cls-hooked/-/typeorm-transactional-cls-hooked-0.1.16.tgz#e54c1bdf572fe63fba64a20da2825263fddd2e76"
-  integrity sha512-pzjBoO5ejO31Tvqn9Hg1HTnFgZ1VIfb56BNfVeYeMdEZdHlBEck4JUf9MEXChMIlX1wx8kd/yKI3waix4DS2mA==
-  dependencies:
-    "@types/cls-hooked" "^4.2.1"
-    cls-hooked "^4.2.2"
-
-typeorm-transactional-cls-hooked@^0.1.12:
-  version "0.1.12"
-  resolved "https://registry.yarnpkg.com/typeorm-transactional-cls-hooked/-/typeorm-transactional-cls-hooked-0.1.12.tgz#30f6985655505475922da0bcd88a04ee72073760"
-  integrity sha512-kCKYVzmE+re8AbMCUR2hgXYFjhsTUo2L0r2ypo1mU8KY7WG+7S5o2LDhONX3OYJ12V81SOWHHmxGRwU82nYtWg==
+typeorm-transactional-cls-hooked@0.1.17, typeorm-transactional-cls-hooked@^0.1.12:
+  version "0.1.17"
+  resolved "https://registry.yarnpkg.com/typeorm-transactional-cls-hooked/-/typeorm-transactional-cls-hooked-0.1.17.tgz#7d7743836f487c3ba6fc777780e6c0e9a9101326"
+  integrity sha512-iuDh0/vsQBVvQmjZ5KKZHhlbsgQLD8uUKZypzaMFOh9/N99j9fxgz4NCLBCDl4K30vCi7SROpiuEXAPtMxy+ew==
   dependencies:
     "@types/cls-hooked" "^4.2.1"
     cls-hooked "^4.2.2"
