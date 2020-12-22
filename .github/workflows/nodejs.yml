@@ -45,14 +45,7 @@ jobs:
         uses: coverallsapp/github-action@v1.1.2
         with:
           github-token: ${{ secrets.github_token }}
-          flag-name: variables
-          base-path: packages/variables
-          parallel: true
-      - name: Coveralls
-        uses: coverallsapp/github-action@v1.1.2
-        with:
-          github-token: ${{ secrets.github_token }}
-          flag-name: "@9renpoto/core"
+          flag-name: '@9renpoto/core'
           base-path: apps/core
           parallel: true
   finish:
