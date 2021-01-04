@@ -1555,11 +1555,11 @@
     webpack-node-externals "2.5.2"
 
 "@nestjs/common@^7.5.3":
-  version "7.6.4"
-  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-7.6.4.tgz#eabb92cc7f910a0d0d008b62eab57b7e93cef1dc"
-  integrity sha512-hpMqn26ec6sjmWmXoiOksWi3wzAn6laF1qNhb3PSikRpaafjzba1m+/vABdAqZ8JOrcrN6gQs5IjtwyzhTurzQ==
+  version "7.6.5"
+  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-7.6.5.tgz#d6e9435453eef2d1b492384ca27fa23358744949"
+  integrity sha512-WvBJd71ktaCRm9KTURVqn1YMyUzsOIkvezjP7WEpP9DVqQUOFVvn6/osJGZky/qL+zE4P7NBNyoXM94bpYvMwQ==
   dependencies:
-    axios "0.21.0"
+    axios "0.21.1"
     iterare "1.2.1"
     tslib "2.0.3"
     uuid "8.3.2"
@@ -3760,10 +3760,10 @@ aws4@^1.8.0:
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.10.1.tgz#e1e82e4f3e999e2cfd61b161280d16a111f86428"
   integrity sha512-zg7Hz2k5lI8kb7U32998pRRFin7zJlkfezGJjUc2heaD4Pw2wObakCDVzkKztTm/Ln7eiVvYsjqak0Ed4LkMDA==
 
-axios@0.21.0:
-  version "0.21.0"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.0.tgz#26df088803a2350dff2c27f96fef99fe49442aca"
-  integrity sha512-fmkJBknJKoZwem3/IKSSLpkdNXZeBu5Q7GA/aRsr2btgrptmSCxi2oFjZHqGdK9DoTil9PIHlPIZw2EcRJXRvw==
+axios@0.21.1:
+  version "0.21.1"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
+  integrity sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
   dependencies:
     follow-redirects "^1.10.0"
 
@@ -12723,24 +12723,16 @@ typeorm-naming-strategies@^2.0.0:
   integrity sha512-nsJ5jDjhBBEG6olFmxojkO4yrW7hEv38sH7ZXWWx9wnDoo9uaoH/mo2mBYAh/VKgwoFHBLu+CYxGmzXz2GUMcA==
 
 typeorm-test-transactions@^1.9.0:
-  version "1.14.1"
-  resolved "https://registry.yarnpkg.com/typeorm-test-transactions/-/typeorm-test-transactions-1.14.1.tgz#33a90dd3ead9afec79964f8b4876f0b7f5413900"
-  integrity sha512-jOPOP2mWKpQReRIZxkdJc2kRtyypxHcDrp4alY9fJwMz3s9G36WTXutqiXytuaMvmbq1rOrmoAe9+zYInoHk3A==
+  version "1.14.2"
+  resolved "https://registry.yarnpkg.com/typeorm-test-transactions/-/typeorm-test-transactions-1.14.2.tgz#a6a96e78d471a52eab2e5d0e12f2115b2f86e849"
+  integrity sha512-2EZ40RfVR0vmpA0DHfrkr3WRC9l57G/r9TEIwvRUb0Bhl5zdJ5OSICFw2xTrd7RONIwDV/MaE729JXKXICEFQQ==
   dependencies:
     typeorm-transactional-cls-hooked "^0.1.12"
 
-typeorm-transactional-cls-hooked@0.1.19:
+typeorm-transactional-cls-hooked@0.1.19, typeorm-transactional-cls-hooked@^0.1.12:
   version "0.1.19"
   resolved "https://registry.yarnpkg.com/typeorm-transactional-cls-hooked/-/typeorm-transactional-cls-hooked-0.1.19.tgz#6b055ec944ab2b588d3dec4b7aa3ce7c0ef7e3c9"
   integrity sha512-UZIRwOOVwzGfh81j8I0heyqP1XxXfUKGkrJkR4+tGtIKF/aki/ZHD1n/DNVrZtNYoz4kXcwEYqNH/FBpPsXbKw==
-  dependencies:
-    "@types/cls-hooked" "^4.2.1"
-    cls-hooked "^4.2.2"
-
-typeorm-transactional-cls-hooked@^0.1.12:
-  version "0.1.12"
-  resolved "https://registry.yarnpkg.com/typeorm-transactional-cls-hooked/-/typeorm-transactional-cls-hooked-0.1.12.tgz#30f6985655505475922da0bcd88a04ee72073760"
-  integrity sha512-kCKYVzmE+re8AbMCUR2hgXYFjhsTUo2L0r2ypo1mU8KY7WG+7S5o2LDhONX3OYJ12V81SOWHHmxGRwU82nYtWg==
   dependencies:
     "@types/cls-hooked" "^4.2.1"
     cls-hooked "^4.2.2"
