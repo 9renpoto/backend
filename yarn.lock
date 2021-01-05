@@ -12723,24 +12723,16 @@ typeorm-naming-strategies@^2.0.0:
   integrity sha512-nsJ5jDjhBBEG6olFmxojkO4yrW7hEv38sH7ZXWWx9wnDoo9uaoH/mo2mBYAh/VKgwoFHBLu+CYxGmzXz2GUMcA==
 
 typeorm-test-transactions@^1.9.0:
-  version "1.14.1"
-  resolved "https://registry.yarnpkg.com/typeorm-test-transactions/-/typeorm-test-transactions-1.14.1.tgz#33a90dd3ead9afec79964f8b4876f0b7f5413900"
-  integrity sha512-jOPOP2mWKpQReRIZxkdJc2kRtyypxHcDrp4alY9fJwMz3s9G36WTXutqiXytuaMvmbq1rOrmoAe9+zYInoHk3A==
+  version "1.14.2"
+  resolved "https://registry.yarnpkg.com/typeorm-test-transactions/-/typeorm-test-transactions-1.14.2.tgz#a6a96e78d471a52eab2e5d0e12f2115b2f86e849"
+  integrity sha512-2EZ40RfVR0vmpA0DHfrkr3WRC9l57G/r9TEIwvRUb0Bhl5zdJ5OSICFw2xTrd7RONIwDV/MaE729JXKXICEFQQ==
   dependencies:
     typeorm-transactional-cls-hooked "^0.1.12"
 
-typeorm-transactional-cls-hooked@0.1.19:
+typeorm-transactional-cls-hooked@0.1.19, typeorm-transactional-cls-hooked@^0.1.12:
   version "0.1.19"
   resolved "https://registry.yarnpkg.com/typeorm-transactional-cls-hooked/-/typeorm-transactional-cls-hooked-0.1.19.tgz#6b055ec944ab2b588d3dec4b7aa3ce7c0ef7e3c9"
   integrity sha512-UZIRwOOVwzGfh81j8I0heyqP1XxXfUKGkrJkR4+tGtIKF/aki/ZHD1n/DNVrZtNYoz4kXcwEYqNH/FBpPsXbKw==
-  dependencies:
-    "@types/cls-hooked" "^4.2.1"
-    cls-hooked "^4.2.2"
-
-typeorm-transactional-cls-hooked@^0.1.12:
-  version "0.1.12"
-  resolved "https://registry.yarnpkg.com/typeorm-transactional-cls-hooked/-/typeorm-transactional-cls-hooked-0.1.12.tgz#30f6985655505475922da0bcd88a04ee72073760"
-  integrity sha512-kCKYVzmE+re8AbMCUR2hgXYFjhsTUo2L0r2ypo1mU8KY7WG+7S5o2LDhONX3OYJ12V81SOWHHmxGRwU82nYtWg==
   dependencies:
     "@types/cls-hooked" "^4.2.1"
     cls-hooked "^4.2.2"
