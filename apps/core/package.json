@@ -38,7 +38,7 @@
     "reflect-metadata": "0.1.13",
     "rxjs": "^6.5.4",
     "stripe": "^8.19.0",
-    "typedi": "0.9.0",
+    "typedi": "0.9.1",
     "typeorm": "0.2.29",
     "typeorm-naming-strategies": "^2.0.0",
     "typeorm-test-transactions": "^1.9.0",
