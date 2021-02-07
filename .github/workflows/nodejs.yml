@@ -46,6 +46,7 @@ jobs:
           github-token: ${{ secrets.github_token }}
           flag-name: '@9renpoto/core'
           base-path: apps/core
+          path-to-lcov: apps/core/coverage/lcov.info
           parallel: true
   finish:
     needs: build
