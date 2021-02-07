@@ -50,6 +50,9 @@
       "prettier --write"
     ]
   },
+  "resolutions": {
+    "graphql": "^15.0.0"
+  },
   "prettier": {
     "semi": false,
     "singleQuote": true
