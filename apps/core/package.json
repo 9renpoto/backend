@@ -47,7 +47,7 @@
   "devDependencies": {
     "@nestjs/cli": "7.5.6",
     "@nestjs/testing": "7.6.15",
-    "apollo-server-testing": "2.21.2",
+    "apollo-server-testing": "2.22.0",
     "typeorm-factory": "0.0.14"
   },
   "jest": {
