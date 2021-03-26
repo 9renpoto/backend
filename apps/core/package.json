@@ -45,7 +45,7 @@
     "typeorm-transactional-cls-hooked": "^0.1.20"
   },
   "devDependencies": {
-    "@nestjs/cli": "7.5.6",
+    "@nestjs/cli": "7.6.0",
     "@nestjs/testing": "7.6.15",
     "apollo-server-testing": "2.22.1",
     "typeorm-factory": "0.0.14"
