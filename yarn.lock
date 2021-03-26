@@ -3351,10 +3351,10 @@ apollo-server-core@^2.19.0:
     uuid "^8.0.0"
     ws "^6.0.0"
 
-apollo-server-core@^2.22.0:
-  version "2.22.0"
-  resolved "https://registry.yarnpkg.com/apollo-server-core/-/apollo-server-core-2.22.0.tgz#f430880fcf36f4e4d38d8ad513f46b635010f62b"
-  integrity sha512-SXWXQkE5wPe7+13bqZ34a3957qoFifiydbka87oIx8BKANspo89El3PJ3Zb6NtMQdBlv1XjGtCwdAFuDncFRIQ==
+apollo-server-core@^2.22.1:
+  version "2.22.1"
+  resolved "https://registry.yarnpkg.com/apollo-server-core/-/apollo-server-core-2.22.1.tgz#5ca27ab5e8ed815bab7e1e753c64e13301484527"
+  integrity sha512-US5MyrTYHwPQb8fTPn8a+CyupB5VHltC7X/yaT0zQkfI7GLLux1LI2Q1mNaRXqf03b89BGFnH4ghWQvVsNEbyw==
   dependencies:
     "@apollographql/apollo-tools" "^0.4.3"
     "@apollographql/graphql-playground-html" "1.6.27"
@@ -3461,12 +3461,12 @@ apollo-server-plugin-base@^0.9.1:
   dependencies:
     apollo-server-types "^0.5.1"
 
-apollo-server-testing@2.22.0:
-  version "2.22.0"
-  resolved "https://registry.yarnpkg.com/apollo-server-testing/-/apollo-server-testing-2.22.0.tgz#7b4c657cce4d0ef21167d376c3d56c4498b0cf57"
-  integrity sha512-Wt9BbnTWuMEf1h63BxGaXloH73dN29M5BPLYX7mo6dxoO2gdNIMwXu9irIsE2KemRdIMCARPkEBlsE6/MvSmiQ==
+apollo-server-testing@2.22.1:
+  version "2.22.1"
+  resolved "https://registry.yarnpkg.com/apollo-server-testing/-/apollo-server-testing-2.22.1.tgz#3a8a7b9ad33c280a84676fdbe4ab51083e5f808b"
+  integrity sha512-VsHRCVPckLMieUChSRarsEzR7p1xObR+bCcPJIWyCoJeviTfDQd5lVPrek4oW2R1J6cNwVHx32wYTaUm6aOqyg==
   dependencies:
-    apollo-server-core "^2.22.0"
+    apollo-server-core "^2.22.1"
 
 apollo-server-testing@^2.16.1:
   version "2.19.0"
