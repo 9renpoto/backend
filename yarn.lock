@@ -3051,20 +3051,6 @@ apollo-reporting-protobuf@^0.6.0, apollo-reporting-protobuf@^0.6.2:
   dependencies:
     "@apollo/protobufjs" "^1.0.3"
 
-apollo-reporting-protobuf@^0.6.1:
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/apollo-reporting-protobuf/-/apollo-reporting-protobuf-0.6.1.tgz#09294e5f5f6b2285eb94b40621ed42113eaabea3"
-  integrity sha512-qr4DheFP154PGZsd93SSIS9RkqHnR5b6vT+eCloWjy3UIpY+yZ3cVLlttlIjYvOG4xTJ25XEwcHiAExatQo/7g==
-  dependencies:
-    "@apollo/protobufjs" "^1.0.3"
-
-apollo-server-caching@^0.5.2:
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/apollo-server-caching/-/apollo-server-caching-0.5.2.tgz#bef5d5e0d48473a454927a66b7bb947a0b6eb13e"
-  integrity sha512-HUcP3TlgRsuGgeTOn8QMbkdx0hLPXyEJehZIPrcof0ATz7j7aTPA4at7gaiFHCo8gk07DaWYGB3PFgjboXRcWQ==
-  dependencies:
-    lru-cache "^5.0.0"
-
 apollo-server-caching@^0.5.3:
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/apollo-server-caching/-/apollo-server-caching-0.5.3.tgz#cf42a77ad09a46290a246810075eaa029b5305e1"
@@ -3111,14 +3097,6 @@ apollo-server-core@^2.19.0, apollo-server-core@^2.21.0, apollo-server-core@^2.22
     uuid "^8.0.0"
     ws "^6.0.0"
 
-apollo-server-env@^2.4.5:
-  version "2.4.5"
-  resolved "https://registry.yarnpkg.com/apollo-server-env/-/apollo-server-env-2.4.5.tgz#73730b4f0439094a2272a9d0caa4079d4b661d5f"
-  integrity sha512-nfNhmGPzbq3xCEWT8eRpoHXIPNcNy3QcEoBlzVMjeglrBGryLG2LXwBSPnVmTRRrzUYugX0ULBtgE3rBFNoUgA==
-  dependencies:
-    node-fetch "^2.1.2"
-    util.promisify "^1.0.0"
-
 apollo-server-env@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/apollo-server-env/-/apollo-server-env-3.0.0.tgz#0157c51f52b63aee39af190760acf789ffc744d9"
@@ -3156,17 +3134,17 @@ apollo-server-express@^2.19.0:
     type-is "^1.6.16"
 
 apollo-server-fastify@^2.19.0:
-  version "2.19.0"
-  resolved "https://registry.yarnpkg.com/apollo-server-fastify/-/apollo-server-fastify-2.19.0.tgz#fe0658e64b40be3e641c0030a1d604b472b53be0"
-  integrity sha512-mKPgwi/oIioVCiL5QbNNP0NwRgaotaKolxwu+XJytwwzyGdSfO0PnWpY3oasyHjz1hZU5wKkaOAN5rmJ5WjT8g==
+  version "2.22.2"
+  resolved "https://registry.yarnpkg.com/apollo-server-fastify/-/apollo-server-fastify-2.22.2.tgz#f85f24ef62ea53ef80aa66b9528938a683408354"
+  integrity sha512-OorLYLnM274tB8QlDoXQCgGiJsQ2QHEYuBHzwyG161jUr+XLBxhLF8O6agZAm/VfwTpcmxXUQx5wfMfWVHhgkQ==
   dependencies:
-    "@apollographql/graphql-playground-html" "1.6.26"
-    apollo-server-core "^2.19.0"
-    apollo-server-types "^0.6.1"
+    "@apollographql/graphql-playground-html" "1.6.27"
+    apollo-server-core "^2.22.2"
+    apollo-server-types "^0.7.0"
     fastify-accepts "^1.0.0"
     fastify-cors "^0.2.0"
     graphql-subscriptions "^1.0.0"
-    graphql-tools "^4.0.0"
+    graphql-tools "^4.0.8"
 
 apollo-server-plugin-base@^0.11.0:
   version "0.11.0"
@@ -3182,16 +3160,7 @@ apollo-server-testing@2.22.2, apollo-server-testing@^2.21.1:
   dependencies:
     apollo-server-core "^2.22.2"
 
-apollo-server-types@^0.6.1:
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/apollo-server-types/-/apollo-server-types-0.6.1.tgz#61486980b44cacee2cb4939f0b369a0eb661a098"
-  integrity sha512-IEQ37aYvMLiTUzsySVLOSuvvhxuyYdhI05f3cnH6u2aN1HgGp7vX6bg+U3Ue8wbHfdcifcGIk5UEU+Q+QO6InA==
-  dependencies:
-    apollo-reporting-protobuf "^0.6.1"
-    apollo-server-caching "^0.5.2"
-    apollo-server-env "^2.4.5"
-
-apollo-server-types@^0.6.3:
+apollo-server-types@^0.6.1, apollo-server-types@^0.6.3:
   version "0.6.3"
   resolved "https://registry.yarnpkg.com/apollo-server-types/-/apollo-server-types-0.6.3.tgz#f7aa25ff7157863264d01a77d7934aa6e13399e8"
   integrity sha512-aVR7SlSGGY41E1f11YYz5bvwA89uGmkVUtzMiklDhZ7IgRJhysT5Dflt5IuwDxp+NdQkIhVCErUXakopocFLAg==
@@ -7898,7 +7867,7 @@ lower-case@^2.0.2:
   dependencies:
     tslib "^2.0.3"
 
-lru-cache@^5.0.0, lru-cache@^5.1.1:
+lru-cache@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-5.1.1.tgz#1da27e6710271947695daf6848e847f01d84b920"
   integrity sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==
