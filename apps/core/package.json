@@ -34,7 +34,7 @@
     "nestjs-dataloader": "^7.0.1",
     "nestjs-graphql-relay": "^1.0.2",
     "nestjs-stripe": "^0.4.0",
-    "pg": "^8.0.0",
+    "pg": "^8.6.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^6.5.4",
     "stripe": "^8.19.0",
