@@ -8624,9 +8624,9 @@ nestjs-dataloader@^7.0.1:
     rxjs "^6.5.4"
 
 nestjs-graphql-relay@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/nestjs-graphql-relay/-/nestjs-graphql-relay-1.0.2.tgz#c9cd8077f2d4d9c7424a942c8b1a927997588adc"
-  integrity sha512-HaFmugO56wKFyWEZEd4AFwkkUcKto8QjuRuT8lMILtl7NPXWeOQKXFMOg99kEWiSMWcoGOUSQ6QIL9IvQ227qg==
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/nestjs-graphql-relay/-/nestjs-graphql-relay-1.2.0.tgz#ef98c6a4268f2c64589a7c0e8c99bb4598f69753"
+  integrity sha512-h9e4YDYtUo3ZlT8D/99yX6IL5A9kgJ+uSfpcykDoKlqaoXObPM0ThNHer4OJjuRrdf+XT3LG7gUNDTNnH30M4Q==
 
 nestjs-stripe@^0.4.0:
   version "0.4.0"
