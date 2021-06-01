@@ -28,7 +28,7 @@
     "class-validator": "^0.13.1",
     "fastify-swagger": "^4.0.0",
     "graphql": "^15.0.0",
-    "graphql-relay": "^0.6.0",
+    "graphql-relay": "^0.7.0",
     "graphql-tag-pluck": "^0.8.7",
     "nest-raven": "^7.0.0",
     "nestjs-dataloader": "^7.0.1",
