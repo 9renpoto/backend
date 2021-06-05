@@ -1,40 +1,40 @@
-import { GraphQLModule } from '@nestjs/graphql'
+import { GraphQLModule } from "@nestjs/graphql";
 import {
   FastifyAdapter,
   NestFastifyApplication,
-} from '@nestjs/platform-fastify'
-import { Test, TestingModule } from '@nestjs/testing'
-import { createTestClient } from 'apollo-server-testing'
-import gql from 'graphql-tag'
-import { AppModule } from '../src/app.module'
-import { UserFactory } from '../src/user/user.factory'
+} from "@nestjs/platform-fastify";
+import { Test, TestingModule } from "@nestjs/testing";
+import { createTestClient } from "apollo-server-testing";
+import gql from "graphql-tag";
+import { AppModule } from "../src/app.module";
+import { UserFactory } from "../src/user/user.factory";
 
-describe('app (e2e)', () => {
-  let app: NestFastifyApplication
-  let apolloClient: ReturnType<typeof createTestClient>
+describe("app (e2e)", () => {
+  let app: NestFastifyApplication;
+  let apolloClient: ReturnType<typeof createTestClient>;
 
   beforeEach(async () => {
     const moduleFixture: TestingModule = await Test.createTestingModule({
       imports: [AppModule],
-    }).compile()
+    }).compile();
     app = moduleFixture.createNestApplication<NestFastifyApplication>(
       new FastifyAdapter()
-    )
-    await app.init()
+    );
+    await app.init();
 
     // apolloServer is protected, we need to cast module to any to get it
     apolloClient = createTestClient(
       (moduleFixture.get(GraphQLModule) as any).apolloServer
-    )
-  })
+    );
+  });
 
-  afterEach(() => app.close())
+  afterEach(() => app.close());
 
-  it('defined', () => expect(app).toBeDefined())
+  it("defined", () => expect(app).toBeDefined());
 
-  it('try dataLoader', async () => {
-    const user = await UserFactory.create()
-    const { query } = apolloClient
+  it("try dataLoader", async () => {
+    const user = await UserFactory.create();
+    const { query } = apolloClient;
     expect(
       await (
         await query({
@@ -51,6 +51,6 @@ describe('app (e2e)', () => {
           },
         })
       ).data
-    ).toBeDefined()
-  })
-})
+    ).toBeDefined();
+  });
+});

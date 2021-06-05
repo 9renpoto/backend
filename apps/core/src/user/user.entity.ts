@@ -1,22 +1,22 @@
-import { Field, ID, ObjectType } from '@nestjs/graphql'
+import { Field, ID, ObjectType } from "@nestjs/graphql";
 import {
   Column,
   Entity,
   EntityRepository,
   PrimaryGeneratedColumn,
-} from 'typeorm'
-import { BaseRepository } from 'typeorm-transactional-cls-hooked'
+} from "typeorm";
+import { BaseRepository } from "typeorm-transactional-cls-hooked";
 
-@Entity('users')
+@Entity("users")
 @ObjectType()
 export class User {
   @Field(() => ID)
-  @PrimaryGeneratedColumn('uuid')
-  readonly id: string
+  @PrimaryGeneratedColumn("uuid")
+  readonly id: string;
 
   @Field()
   @Column()
-  readonly name: string
+  readonly name: string;
 }
 
 @EntityRepository(User)

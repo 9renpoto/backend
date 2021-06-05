@@ -1,9 +1,9 @@
-import { TypeOrmHealthIndicator } from '@nestjs/terminus'
-import { Test, TestingModule } from '@nestjs/testing'
-import { TerminusOptionsService as HealthService } from './health.service'
+import { TypeOrmHealthIndicator } from "@nestjs/terminus";
+import { Test, TestingModule } from "@nestjs/testing";
+import { TerminusOptionsService as HealthService } from "./health.service";
 
-describe('HealthService', () => {
-  let service: HealthService
+describe("HealthService", () => {
+  let service: HealthService;
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
@@ -11,17 +11,17 @@ describe('HealthService', () => {
         HealthService,
         TypeOrmHealthIndicator,
         {
-          provide: '',
+          provide: "",
           useValue: {},
         },
       ],
-    }).compile()
+    }).compile();
 
-    service = module.get<HealthService>(HealthService)
-  })
+    service = module.get<HealthService>(HealthService);
+  });
 
-  it('should be defined', () => expect(service).toBeDefined())
+  it("should be defined", () => expect(service).toBeDefined());
 
-  it('createTerminusOptions', () =>
-    expect(service.createTerminusOptions()).toBeDefined())
-})
+  it("createTerminusOptions", () =>
+    expect(service.createTerminusOptions()).toBeDefined());
+});

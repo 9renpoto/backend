@@ -53,10 +53,6 @@
       "prettier --write"
     ]
   },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true
-  },
   "workspaces": [
     "packages/*",
     "apps/*"

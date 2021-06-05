@@ -1,2 +1,2 @@
-import { server } from '../api'
-server.close()
+import { server } from "../api";
+server.close();
