@@ -14,9 +14,7 @@
   "dependencies": {
     "@nexus/schema": "^0.20.0",
     "@prisma/client": "^2.11.0",
-    "apollo-server-express": "^2.19.0",
-    "graphql-scalars": "^1.4.1",
-    "nexus-plugin-prisma": "^0.24.0"
+    "apollo-server-express": "^2.19.0"
   },
   "devDependencies": {
     "@prisma/cli": "2.19.0",
