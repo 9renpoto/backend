@@ -13,8 +13,7 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand"
   },
   "dependencies": {
-    "@godaddy/terminus": "^4.5.0",
-    "@nestjs/config": "0.6.3",
+    "@nestjs/config": "^0.6.3",
     "@nestjs/graphql": "^7.8.2",
     "@nestjs/platform-fastify": "^7.5.3",
     "@nestjs/swagger": "^4.8.0",
@@ -38,7 +37,6 @@
   "devDependencies": {
     "@nestjs/cli": "7.6.0",
     "@nestjs/testing": "7.6.17",
-    "apollo-server-testing": "2.25.0",
     "typeorm-factory": "0.0.14"
   },
   "jest": {
