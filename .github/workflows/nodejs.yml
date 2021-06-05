@@ -28,12 +28,10 @@ jobs:
         uses: actions/setup-node@v2.1.5
         with:
           node-version: ${{ matrix.node-version }}
-      - name: npm install, build, and test
-        run: |
-          npm ci
-          npm run build
-          npm run lint
-          npm test
+      - run: npm ci
+      - run: npm run build
+      - run: npm run lint
+      - run: npm test
         env:
           CI: true
           POSTGRES_HOST: postgres
