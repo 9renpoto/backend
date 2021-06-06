@@ -1,15 +1,15 @@
-import { Module, ValidationPipe } from '@nestjs/common'
-import { ConfigModule, ConfigService } from '@nestjs/config'
-import { APP_INTERCEPTOR, APP_PIPE } from '@nestjs/core'
-import { GraphQLModule } from '@nestjs/graphql'
-import { TypeOrmModule } from '@nestjs/typeorm'
-import { RavenInterceptor, RavenModule } from 'nest-raven'
-import { StripeModule } from 'nestjs-stripe'
-import { AppService } from './app.service'
-import databaseConfig from './config/database'
-import stripeConfig from './config/stripe'
-import { HealthModule } from './health/health.module'
-import { UserModule } from './user/user.module'
+import { Module, ValidationPipe } from "@nestjs/common";
+import { ConfigModule, ConfigService } from "@nestjs/config";
+import { APP_INTERCEPTOR, APP_PIPE } from "@nestjs/core";
+import { GraphQLModule } from "@nestjs/graphql";
+import { TypeOrmModule } from "@nestjs/typeorm";
+import { RavenInterceptor, RavenModule } from "nest-raven";
+import { StripeModule } from "nestjs-stripe";
+import { AppService } from "./app.service";
+import databaseConfig from "./config/database";
+import stripeConfig from "./config/stripe";
+import { HealthModule } from "./health/health.module";
+import { UserModule } from "./user/user.module";
 
 @Module({
   imports: [
@@ -20,18 +20,18 @@ import { UserModule } from './user/user.module'
     GraphQLModule.forRoot({
       installSubscriptionHandlers: true,
       autoSchemaFile:
-        process.env.NODE_ENV === 'production' ? true : `./src/schema.gql`,
+        process.env.NODE_ENV === "production" ? true : `./src/schema.gql`,
       context: ({ req }) => ({ req }),
     }),
     StripeModule.forRootAsync({
       imports: [ConfigModule],
       inject: [ConfigService],
-      useFactory: (config: ConfigService) => config.get('stripe') as any,
+      useFactory: (config: ConfigService) => config.get("stripe") as any,
     }),
     TypeOrmModule.forRootAsync({
       imports: [ConfigModule],
       inject: [ConfigService],
-      useFactory: (config: ConfigService) => config.get('database') as any,
+      useFactory: (config: ConfigService) => config.get("database") as any,
     }),
     HealthModule,
     RavenModule,

@@ -1,11 +1,11 @@
-import { Connection, createConnection } from 'typeorm'
-import { initialiseTestTransactions } from 'typeorm-test-transactions'
-import { config } from '../config/database'
-import { User } from '../user/user.entity'
+import { Connection, createConnection } from "typeorm";
+import { initialiseTestTransactions } from "typeorm-test-transactions";
+import { config } from "../config/database";
+import { User } from "../user/user.entity";
 
-initialiseTestTransactions()
+initialiseTestTransactions();
 
-const entities = [User]
+const entities = [User];
 
 function createBDConnection() {
   return createConnection({
@@ -14,7 +14,7 @@ function createBDConnection() {
       logging: false,
     },
     entities,
-  })
+  });
 }
 
 async function cleanDB(connection: Connection) {
@@ -22,20 +22,20 @@ async function cleanDB(connection: Connection) {
     Promise.all(
       entities.map(async (entity) => {
         try {
-          const repo = await manager.getRepository(entity)
-          return repo.query(`DELETE FROM ${repo.metadata.tableName};`)
+          const repo = await manager.getRepository(entity);
+          return repo.query(`DELETE FROM ${repo.metadata.tableName};`);
         } catch (err) {
-          await connection.close()
-          throw new Error(`ERROR: Cleaning test db: ${err}`)
+          await connection.close();
+          throw new Error(`ERROR: Cleaning test db: ${err}`);
         }
       })
     )
-  )
+  );
 }
 
-let connection: Connection
+let connection: Connection;
 beforeAll(async () => {
-  connection = await createBDConnection()
-})
-afterAll(() => connection.close())
-afterEach(() => cleanDB(connection))
+  connection = await createBDConnection();
+});
+afterAll(() => connection.close());
+afterEach(() => cleanDB(connection));

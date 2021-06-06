@@ -1,10 +1,10 @@
-import { Injectable } from '@nestjs/common'
+import { Injectable } from "@nestjs/common";
 import {
   TerminusEndpoint,
   TerminusModuleOptions,
   TerminusOptionsFactory,
   TypeOrmHealthIndicator,
-} from '@nestjs/terminus'
+} from "@nestjs/terminus";
 
 @Injectable()
 export class TerminusOptionsService implements TerminusOptionsFactory {
@@ -14,14 +14,14 @@ export class TerminusOptionsService implements TerminusOptionsFactory {
 
   createTerminusOptions(): TerminusModuleOptions {
     const healthEndpoint: TerminusEndpoint = {
-      url: '/health',
+      url: "/health",
       healthIndicators: [
         async () =>
-          this.typeOrmHealthIndicator.pingCheck('database', { timeout: 300 }),
+          this.typeOrmHealthIndicator.pingCheck("database", { timeout: 300 }),
       ],
-    }
+    };
     return {
       endpoints: [healthEndpoint],
-    }
+    };
   }
 }

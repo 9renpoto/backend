@@ -1,6 +1,6 @@
-import { Module } from '@nestjs/common'
-import { TerminusModule } from '@nestjs/terminus'
-import { TerminusOptionsService } from './health.service'
+import { Module } from "@nestjs/common";
+import { TerminusModule } from "@nestjs/terminus";
+import { TerminusOptionsService } from "./health.service";
 
 @Module({
   imports: [

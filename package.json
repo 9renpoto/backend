@@ -2,31 +2,26 @@
   "name": "@9renpoto/backend",
   "private": true,
   "author": "github.com/9renpoto",
+  "engines": {
+    "npm": "^7.0.0"
+  },
   "scripts": {
-    "build": "lerna run build --include-dependencies",
-    "bump": "lerna version --no-git-tag-version --no-push && lerna-changelog",
-    "clean": "lerna run clean --parallel && lerna clean",
+    "build": "npm run build --workspaces",
+    "clean": "npm run clean --workspaces",
     "lint": "run-s -l lint:*",
-    "lint:eslint": "npx eslint . --ext=ts,tsx",
+    "lint:es": "npx eslint . --ext=ts,tsx",
     "lint:md": "textlint README.md packages/*.md packages/**/*.md",
-    "lint:pkg": "lerna run lint --parallel",
-    "lint:prettier": "prettier --check './{packages,apps}/**/*.{js,jsx,ts,tsx}'",
-    "release": "lerna exec --no-bail -- 'can-npm-publish && npm publish --registry=\"https://registry.npmjs.org/\"'",
-    "hasura": "yarn workspace @9renpoto/hasura hasura",
-    "test": "lerna run test -- -w 1"
+    "lint:fmt": "prettier --check './{packages,apps}/**/*.{js,jsx,ts,tsx}'",
+    "test": "npm run test --workspaces -- -w 1"
   },
   "devDependencies": {
     "@9renpoto/eslint-config-typescript": "7.4.0",
     "@9renpoto/textlint-config-ja": "7.4.0",
-    "@9renpoto/tsconfig": "7.4.0",
+    "@9renpoto/tsconfig": "7.5.0",
     "@types/faker": "5.5.6",
     "@types/jest": "26.0.23",
-    "eslint": "7.28.0",
     "faker": "5.5.3",
     "husky": "6.0.0",
-    "jest": "26.6.3",
-    "lerna": "4.0.0",
-    "lerna-changelog": "1.0.1",
     "lint-staged": "11.0.0",
     "npm-run-all": "4.1.5",
     "prettier": "2.3.1",
@@ -37,8 +32,7 @@
     "textlint": "12.0.0",
     "ts-jest": "26.5.6",
     "ts-node": "10.0.0",
-    "tsc-watch": "4.4.0",
-    "tsconfig-paths": "3.9.0"
+    "tsc-watch": "4.4.0"
   },
   "husky": {
     "hooks": {
@@ -49,13 +43,6 @@
     "*.{ts,tsx,js,jsx,md,yml}": [
       "prettier --write"
     ]
-  },
-  "resolutions": {
-    "graphql": "^15.0.0"
-  },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true
   },
   "workspaces": [
     "packages/*",

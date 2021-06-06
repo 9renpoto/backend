@@ -1,9 +1,9 @@
-import { getRepositoryToken } from '@nestjs/typeorm'
-import { Repository } from 'typeorm'
+import { getRepositoryToken } from "@nestjs/typeorm";
+import { Repository } from "typeorm";
 
 type MockType<T> = {
-  [P in keyof T]: jest.Mock<{}>
-}
+  [P in keyof T]: jest.Mock<{}>;
+};
 
 export function createMockRepository<T>(Entity: Function) {
   const useValue: MockType<Partial<Repository<T>>> = {
@@ -16,10 +16,10 @@ export function createMockRepository<T>(Entity: Function) {
     count: jest.fn(),
     save: jest.fn(),
     update: jest.fn(),
-  }
+  };
 
   return {
     provide: getRepositoryToken(Entity),
     useValue,
-  }
+  };
 }

@@ -1,6 +1,6 @@
-import { Injectable } from '@nestjs/common'
-import { In } from 'typeorm'
-import { UserRepository } from './user.entity'
+import { Injectable } from "@nestjs/common";
+import { In } from "typeorm";
+import { UserRepository } from "./user.entity";
 
 @Injectable()
 export class UserService {
@@ -9,6 +9,6 @@ export class UserService {
   async find(ids: readonly string[]) {
     return this.repo.find({
       id: In(ids as string[]),
-    })
+    });
   }
 }
