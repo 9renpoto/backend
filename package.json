@@ -11,7 +11,7 @@
     "lint": "run-s -l lint:*",
     "lint:eslint": "npx eslint . --ext=ts,tsx",
     "lint:md": "textlint README.md packages/*.md packages/**/*.md",
-    "lint:pkg": "lerna run lint --parallel",
+    "lint:pkg": "npm run lint --workspaces",
     "lint:prettier": "prettier --check './{packages,apps}/**/*.{js,jsx,ts,tsx}'",
     "test": "npm run test --workspaces -- -w 1"
   },
