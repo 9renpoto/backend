@@ -16,7 +16,7 @@
     "@apollo/gateway": "^0.30.0",
     "@godaddy/terminus": "^4.9.0",
     "@nestjs/config": "^0.6.3",
-    "@nestjs/graphql": "^7.8.2",
+    "@nestjs/graphql": "^7.11.0",
     "@nestjs/platform-fastify": "^7.5.3",
     "@nestjs/swagger": "^4.8.1",
     "@nestjs/terminus": "^7.0.0",
