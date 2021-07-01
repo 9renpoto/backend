@@ -27,7 +27,7 @@
     "nestjs-graphql-relay": "^1.0.2",
     "nestjs-stripe": "^0.4.0",
     "pg": "^8.0.0",
-    "stripe": "^8.157.0",
+    "stripe": "^8.160.0",
     "typedi": "^0.10.0",
     "typeorm-naming-strategies": "^2.0.0",
     "typeorm-test-transactions": "^1.9.0",
