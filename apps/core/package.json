@@ -24,7 +24,7 @@
     "apollo-server-fastify": "^3.0.0",
     "nest-raven": "^7.0.0",
     "nestjs-dataloader": "^7.0.1",
-    "nestjs-graphql-relay": "^1.0.2",
+    "nestjs-graphql-relay": "^8.0.0",
     "nestjs-stripe": "^0.4.0",
     "pg": "^8.0.0",
     "stripe": "^8.168.0",
