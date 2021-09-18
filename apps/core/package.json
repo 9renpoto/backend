@@ -30,7 +30,7 @@
     "stripe": "^8.168.0",
     "typedi": "^0.10.0",
     "typeorm-naming-strategies": "^2.0.0",
-    "typeorm-test-transactions": "^1.9.0",
+    "typeorm-test-transactions": "^2.0.0",
     "typeorm-transactional-cls-hooked": "^0.1.20"
   },
   "devDependencies": {
