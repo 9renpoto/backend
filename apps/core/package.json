@@ -13,7 +13,7 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand"
   },
   "dependencies": {
-    "@apollo/gateway": "^0.37.0",
+    "@apollo/gateway": "^0.50.0",
     "@godaddy/terminus": "^4.9.0",
     "@nestjs/config": "^1.0.1",
     "@nestjs/graphql": "^7.11.0",
